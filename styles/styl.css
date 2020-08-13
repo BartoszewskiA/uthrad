@@ -1,0 +1,397 @@
+@import url('normal.css');
+
+.colors_theme {
+    background-color: rgb(230, 230, 230);
+    color: #969696;
+    color: rgb(150, 150, 150);
+    color: #FF4747;
+    color: rgb(255, 71, 71);
+    color: #47B9FF;
+    color: rgb(71, 185, 255);
+    color: #3E86B3;
+    color: rgb(62, 134, 179);
+}
+
+/* 
+    SPIS TREŚCI
+        0. Znaczniki podstawowe
+        1. html, body
+        2. wrapeer
+        3. header 
+        4. footer 
+        5. main
+        6. nav_przedmioty
+        7. nav_dzialy
+        8. content
+        9. article
+ */
+
+/* ------------  0. Znaczniki podstawowe ------------------- */
+/* --------------------------------------------------------- */
+
+p {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+
+
+/* ------------  1. html, body ----------------------------- */
+/* --------------------------------------------------------- */
+
+html {
+    font-size: 62.5%;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+
+/* ------------  2. wrapeer -------------------------------- */
+/* --------------------------------------------------------- */
+.wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------  3. header --------------------------------- */
+/* --------------------------------------------------------- */
+
+@media screen and (min-width: 750px) {}
+
+.header {
+    box-sizing: border-box;
+    position: relative;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 10px 8px #888888;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.logo {
+    padding: 20px;
+    text-align: center;
+    width: 10%;
+    min-width: 100px;
+
+}
+
+.logo img {
+    transform: scale(0.8);
+    filter: drop-shadow(2px 2px 1px #888888);
+    margin: 0;
+}
+
+.logo p {
+    font-size: 1.25rem;
+    transform: translateY(-10px);
+    color: rgb(62, 134, 179);
+    font-weight: 600;
+}
+
+.title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*-------------  4. footer  -------------------------------- */
+/* --------------------------------------------------------- */
+.footer {
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 230);
+    min-height: 20px;
+    box-shadow: 0 -10px 8px #888888;
+    padding: 5px 20px;
+    text-align: right;
+}
+
+.footer p {
+    font-size: 1.2rem;
+    color: rgb(94, 94, 94);
+}
+
+
+/*-------------  5. main ----------------------------------- */
+/* --------------------------------------------------------- */
+.main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 750px) {
+    .main {
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+
+/* ------------  6. nav_przedmioty ------------------------- */
+/* --------------------------------------------------------- */
+.nav_przedmioty {
+    box-sizing: border-box;
+    background: linear-gradient(to right top, darkgray 20%, rgb(150, 150, 150) 80%);
+    width: 100%;
+    min-height: 100px;
+    border-bottom: 2px solid rgb(255, 71, 71);
+    ;
+    border-right: none;
+
+}
+
+.menu_przedmioty {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.menu_przedmioty ul {
+    display: block;
+    width: 100%;
+}
+
+.menu_przedmioty li {
+    display: block;
+    padding-left: 25px;
+    padding-right: 15px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition-property: transform, text-shadow;
+    transition-duration: 0.5s;
+}
+
+.menu_przedmioty li:hover {
+    transform: scale(1.1) translateX(22px);
+    /* background: linear-gradient(90deg, rgba(255,255,255,0), rgba(139, 139, 139, 0.7)); */
+    /* border-right:3px solid tomato; */
+}
+
+.pointer::before {
+    content: '>';
+    font-size: 2rem;
+    display: block;
+    margin-left: -23px;
+    padding-right: 0;
+    font-weight: 800;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: rgb(255, 71, 71);
+    text-shadow: 2px 2px 0 #888888;
+}
+
+
+.menu_przedmioty a {
+    display: block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgb(240, 240, 240);
+    text-shadow: 2px 2px 0 #888888;
+
+}
+
+@media screen and (min-width: 750px) {
+    .nav_przedmioty {
+        min-width: 140px;
+        flex: 1;
+        border-right: 3px solid rgb(255, 71, 71);
+
+    }
+
+    .menu_przedmioty li {
+        display: block;
+        padding-left: 25px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        transition-property: transform;
+        transition-duration: 0.5s;
+    }
+
+    .pointer::before {
+        content: '>';
+        font-size: 3rem;
+        display: block;
+        margin-left: -25px;
+        padding-right: 0;
+        font-weight: 800;
+        padding-right: 10px;
+        color: rgb(255, 71, 71);
+        ;
+        text-shadow: 2px 2px 0 #888888;
+    }
+
+    .menu_przedmioty li:hover {
+        transform: translateX(20px) scale3d(1.2, 1.1, 0.75);
+        /* background: linear-gradient(90deg, rgba(255,255,255,0), rgba(139, 139, 139, 0.7)); */
+        /* border-right:3px solid tomato; */
+
+    }
+
+
+}
+
+
+/* ------------  7. nav_dzialy ----------------------------- */
+.nav_dzialy {
+    box-sizing: border-box;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: flex-end;
+    margin-top: 10px;
+
+}
+
+.nav_dzialy ul {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_dzialy li {
+    background-color: rgba(230, 230, 230, 0.5);
+    box-sizing: border-box;
+    display: block;
+}
+
+.nav_dzialy a {
+    box-sizing: border-box;
+    display: block;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgb(62, 134, 179);
+    text-shadow: 2px 2px 1px #cacaca;
+}
+
+.nav_dzialy a:hover {
+    color: rgb(255, 71, 71);
+}
+
+
+.graph {
+    box-sizing: border-box;
+    width: 92%;
+    height: 100%;
+    background-image: url("../images/t6.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 200px;
+    margin: 5px 4% 4% 4%;
+    border: 1px solid rgb(62, 134, 179);
+    box-shadow: 2px 2px 2px #888888;
+    transition: background-image 500ms ease;
+}
+
+.graph:hover {
+    background-image: url("../images/tlo5.jpg");
+}
+
+/* --------------------------------------------------------- */
+
+
+/* ------------  8. content -------------------------------- */
+/* --------------------------------------------------------- */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(230, 230, 230);
+    /* box-shadow: 0 -10px 8px #888888; */
+}
+
+@media screen and (min-width: 750px) {
+    .content {
+        flex: 4;
+        align-items: center;
+        /* box-shadow: none; */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .content {
+        flex: 6;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        /* box-shadow: none; */
+    }
+}
+
+/* ------------  9. article -------------------------------- */
+/* --------------------------------------------------------- */
+
+.article {
+    box-sizing: border-box;
+    background-color: white;
+    /* box-shadow: 2px 2px 3px #888888; */
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    /* min-width: 25%; */
+    max-width: 95%;
+    /* tymczasowe  */
+    margin: 10px;
+    padding: 10px;
+}
+
+.article:hover {
+    border: 1px solid rgb(255, 71, 71);
+}
+
+@media screen and (min-width: 600px) {
+    .article {
+        max-width: 600px;
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+    .article {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .article {
+        max-width: 45%;
+    }
+}
+
+/* --------------------------------------------------------- */
+.line {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255, 71, 71, 0), rgba(rgb(255, 71, 71, 0.795), rgba(255, 71, 71, 0)));
+    border: 0px;
+
+    }
