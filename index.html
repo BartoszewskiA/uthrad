@@ -7,11 +7,14 @@
     <meta name="author" content="Artur Bartoszewski">
     <meta name="copyright" content="Artur Bartoszewski" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="styles/styl.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 </head>
 
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
     <div class="wrapper">
         <!-- ----------------- Nagłówek --------------------- -->
@@ -22,21 +25,31 @@
 
             </div>
             <div class="title">
-                <h1 class="title">MATERIAŁY DLA STUDENTÓW</h1>
-                <p>UTH.RAD, Katedra Informatyki</p>
-
+                <div class="graph" id="graph"> 
+                    
+                    <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
+                </div>
+                
             </div>
-
+            
             <nav class="nav_dzialy">
                 <ul class="menu_dzialy">
-                    <li><a href="#">Wykłady</a></li>
+                    <li><a id="wyklady" href="#">Wykłady</a></li>
                     <li><a href="#">Praktyki</a></li>
                     <li><a href="#">Aktualności</a></li>
                     <li><a href="#">O mnie</a></li>
                 </ul>
-                <div class="graph"> </div>
+                
+                <p><span>Katedra Informatyki</span><br>
+                    Wydział: Transportu, Elektrotechniki i Informatyki<br>
+                    UTH.RAD</p>
             </nav>
-
+            <script>
+                $("#wyklady").hover(function()
+                {
+                    $("#graph").toggleClass('inny');
+                })
+            </script>
         </header>
         <!-- ------------------------------------------------ -->
         <!-- ----------------- TRESC ---------------------- -->

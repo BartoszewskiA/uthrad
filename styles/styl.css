@@ -77,16 +77,17 @@ body {
 }
 
 .logo {
-    padding: 20px;
+    box-sizing: border-box;
+    /* padding: 25px; */
     text-align: center;
-    width: 10%;
+    width: 20vw;
     min-width: 100px;
 
 }
 
 .logo img {
     transform: scale(0.8);
-    filter: drop-shadow(2px 2px 1px #888888);
+    filter: drop-shadow(1px 1px 2px #888888);
     margin: 0;
 }
 
@@ -98,12 +99,169 @@ body {
 }
 
 .title {
-    width: 50%;
+    box-sizing: border-box;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.graph {
+    display: none;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/t6.png");
+    background-repeat: repeat;
+    background-position: right bottom;
+    background-size: 200px;
+    margin: 10px auto;
+    border: 1px solid rgb(62, 134, 179);
+    /* border: 1px solid rgb(150, 150, 150); */
+    box-shadow: 1px 1px 2px #888888;
+    transition: background-image 500ms ease;
+}
+
+.title h1 {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 5px auto 12px auto;
+    color: rgb(77, 77, 77);
+    /* color: rgb(62, 134, 179); */
+
+    /* transform: rotate3d(2, -1, -1, 5deg); */
+}
+@media screen and (min-width: 750px) {
+    .graph {
+        position: relative;
+        display: block;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    .title {
+        width: 50vw;
+    }
+
+    .title h1 {
+        box-sizing: border-box;
+        color: rgb(46, 46, 46);
+        background-color: rgb(230, 230, 230);
+        border-bottom: 1px solid rgb(62, 134, 179);
+        /* border-left: 1px solid rgb(62, 134, 179);
+        border-right: 1px solid rgb(62, 134, 179); */
+        border-radius: 5px;
+        font-size: 1.6rem;
+        font-weight: 800;
+        padding-top:5px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+        padding-right:  25px;
+        width: auto;
+        margin-top: -15px;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .graph {
+        width: 80%;
+    }
+}
+
+
+.nav_dzialy p {
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: auto 50px;
+    padding-left: 10px;
+    color: dimgrey;
+    display: none;
+    border-left: 1px solid rgb(150, 150, 150);
+}
+
+.nav_dzialy span {
+    font-size: 1.3rem;
+    color: rgb(82, 82, 82);
+}
+
+@media screen and (min-width: 1150px) {
+    .nav_dzialy p {
+        display: block;
+    }
+}
+
+
+/* ------------  7. nav_dzialy ----------------------------- */
+.nav_dzialy {
+    box-sizing: border-box;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: flex-end;
+    margin-top: 10px;
+
+}
+
+.nav_dzialy ul {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_dzialy li {
+    background-color: rgba(230, 230, 230, 0.5);
+    box-sizing: border-box;
+    display: block;
+}
+
+.nav_dzialy a {
+    box-sizing: border-box;
+    display: block;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgb(62, 134, 179);
+    /* text-shadow: 2px 2px 1px #cacaca; */
+    text-shadow: 1px 1px 2px #cacaca;
+}
+
+.nav_dzialy a:hover {
+    color: rgb(255, 71, 71);
+}
+
+
+/* .graph {
+    box-sizing: border-box;
+    width: 92%;
+    height: 100%;
+    background-image: url("../images/t6.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 200px;
+    margin: 5px 4% 4% 4%;
+    border: 1px solid rgb(62, 134, 179);
+    box-shadow: 2px 2px 2px #888888;
+    transition: background-image 500ms ease;
+} */
+
+.inny {
+    background-image: url("../images/tlo5.jpg");
+}
+
+/* --------------------------------------------------------- */
+
+
+
 
 
 
@@ -122,6 +280,12 @@ body {
     font-size: 1.2rem;
     color: rgb(94, 94, 94);
 }
+
+
+
+
+
+
 
 
 /*-------------  5. main ----------------------------------- */
@@ -147,7 +311,6 @@ body {
     width: 100%;
     min-height: 100px;
     border-bottom: 2px solid rgb(255, 71, 71);
-    ;
     border-right: none;
 
 }
@@ -240,7 +403,6 @@ body {
         font-weight: 800;
         padding-right: 10px;
         color: rgb(255, 71, 71);
-        ;
         text-shadow: 2px 2px 0 #888888;
     }
 
@@ -255,67 +417,6 @@ body {
 }
 
 
-/* ------------  7. nav_dzialy ----------------------------- */
-.nav_dzialy {
-    box-sizing: border-box;
-    width: 22%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    align-content: flex-end;
-    margin-top: 10px;
-
-}
-
-.nav_dzialy ul {
-    box-sizing: border-box;
-    display: block;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav_dzialy li {
-    background-color: rgba(230, 230, 230, 0.5);
-    box-sizing: border-box;
-    display: block;
-}
-
-.nav_dzialy a {
-    box-sizing: border-box;
-    display: block;
-    padding: 5px 10px 5px 10px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 800;
-    color: rgb(62, 134, 179);
-    text-shadow: 2px 2px 1px #cacaca;
-}
-
-.nav_dzialy a:hover {
-    color: rgb(255, 71, 71);
-}
-
-
-.graph {
-    box-sizing: border-box;
-    width: 92%;
-    height: 100%;
-    background-image: url("../images/t6.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 200px;
-    margin: 5px 4% 4% 4%;
-    border: 1px solid rgb(62, 134, 179);
-    box-shadow: 2px 2px 2px #888888;
-    transition: background-image 500ms ease;
-}
-
-.graph:hover {
-    background-image: url("../images/tlo5.jpg");
-}
-
-/* --------------------------------------------------------- */
 
 
 /* ------------  8. content -------------------------------- */
@@ -394,4 +495,4 @@ body {
     background: linear-gradient(90deg, rgba(255, 71, 71, 0), rgba(rgb(255, 71, 71, 0.795), rgba(255, 71, 71, 0)));
     border: 0px;
 
-    }
+}
