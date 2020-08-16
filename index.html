@@ -18,17 +18,17 @@
 
     <div class="wrapper">
         <!-- ----------------- Nagłówek --------------------- -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="logo">
                 <img src="images/artru_b_logo.png" alt="Artur Bartoszewski">
                 <p>Artur Bartoszewski</p>
 
             </div>
             <div class="title">
-                <div class="graph" id="graph"> 
+                <!-- <div class="graph" id="graph"> 
                     
-                    <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
-                </div>
+                </div> -->
+                <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
                 
             </div>
             
@@ -47,7 +47,7 @@
             <script>
                 $("#wyklady").hover(function()
                 {
-                    $("#graph").toggleClass('inny');
+                    $("#header").toggleClass('newBackground01');
                 })
             </script>
         </header>

@@ -1,4 +1,5 @@
 @import url('normal.css');
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"); */
 
 .colors_theme {
     background-color: rgb(230, 230, 230);
@@ -63,10 +64,11 @@ body {
 
 /* ------------  3. header --------------------------------- */
 /* --------------------------------------------------------- */
-
+/* !!!!????????? */
 @media screen and (min-width: 750px) {}
 
 .header {
+    min-height: 130px;
     box-sizing: border-box;
     position: relative;
     background-color: rgb(230, 230, 230);
@@ -74,6 +76,24 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+    /* background-image: url("../images/computer-repair.png"); */
+    /* background-blend-mode: luminosity; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* .header::before {
+    content: "";
+    position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(230,230,230, .5);
+  filter: grayscale(100%);
+} */
+
+.newBackground01 {
+    background-image: url("../images/p8.png")
+    /* background-blend-mode: normal; */
 }
 
 .logo {
@@ -99,6 +119,7 @@ body {
 }
 
 .title {
+    z-index: 20;
     box-sizing: border-box;
     width: 30vw;
     display: flex;
@@ -107,31 +128,29 @@ body {
     align-items: center;
 }
 
-.graph {
+/* .graph {
     display: none;
     box-sizing: border-box;
     width: 50%;
     height: 100%;
-    background-image: url("../images/t6.png");
+    background-image: url("../images/Untitled-2.png");
     background-repeat: repeat;
     background-position: right bottom;
     background-size: 200px;
     margin: 10px auto;
     border: 1px solid rgb(62, 134, 179);
-    /* border: 1px solid rgb(150, 150, 150); */
+    border: 1px solid rgb(150, 150, 150);
     box-shadow: 1px 1px 2px #888888;
     transition: background-image 500ms ease;
-}
+} */
 
 .title h1 {
     display: block;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 800;
+    /* text-shadow: 2px 2px 1px #888888; */
     margin: 5px auto 12px auto;
-    color: rgb(77, 77, 77);
-    /* color: rgb(62, 134, 179); */
-
-    /* transform: rotate3d(2, -1, -1, 5deg); */
+    color: black;
 }
 @media screen and (min-width: 750px) {
     .graph {
@@ -150,20 +169,13 @@ body {
 
     .title h1 {
         box-sizing: border-box;
-        color: rgb(46, 46, 46);
-        background-color: rgb(230, 230, 230);
-        border-bottom: 1px solid rgb(62, 134, 179);
-        /* border-left: 1px solid rgb(62, 134, 179);
-        border-right: 1px solid rgb(62, 134, 179); */
-        border-radius: 5px;
-        font-size: 1.6rem;
-        font-weight: 800;
+        font-size: 2.2rem;
+        letter-spacing: 2px;
         padding-top:5px;
         padding-bottom: 5px;
         padding-left: 25px;
         padding-right:  25px;
         width: auto;
-        margin-top: -15px;
         margin-bottom: 0;
     }
 }
@@ -176,18 +188,21 @@ body {
 
 
 .nav_dzialy p {
+    z-index: 20;
+    color: black;
     font-size: 1.1rem;
     font-weight: 800;
+    letter-spacing: 1.2px;
     margin: auto 50px;
     padding-left: 10px;
-    color: dimgrey;
     display: none;
-    border-left: 1px solid rgb(150, 150, 150);
+    border-left: 1px solid rgb(255, 71, 71);
+    
 }
 
 .nav_dzialy span {
     font-size: 1.3rem;
-    color: rgb(82, 82, 82);
+    /* color: rgb(82, 82, 82); */
 }
 
 @media screen and (min-width: 1150px) {
@@ -199,6 +214,7 @@ body {
 
 /* ------------  7. nav_dzialy ----------------------------- */
 .nav_dzialy {
+    z-index: 20;
     box-sizing: border-box;
     width: 30vw;
     display: flex;
@@ -218,7 +234,7 @@ body {
 }
 
 .nav_dzialy li {
-    background-color: rgba(230, 230, 230, 0.5);
+    /* background-color: rgba(230, 230, 230, 0.5); */
     box-sizing: border-box;
     display: block;
 }
@@ -232,6 +248,7 @@ body {
     font-weight: 800;
     color: rgb(62, 134, 179);
     /* text-shadow: 2px 2px 1px #cacaca; */
+    background: radial-gradient(rgba(255, 255, 255, 0.568) 50%, rgba(255, 255, 255, 0) 75%);
     text-shadow: 1px 1px 2px #cacaca;
 }
 
@@ -253,11 +270,6 @@ body {
     box-shadow: 2px 2px 2px #888888;
     transition: background-image 500ms ease;
 } */
-
-.inny {
-    background-image: url("../images/tlo5.jpg");
-}
-
 /* --------------------------------------------------------- */
 
 
@@ -338,7 +350,7 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    transition-property: transform, text-shadow;
+    transition-property: transform;
     transition-duration: 0.5s;
 }
 
