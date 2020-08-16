@@ -76,10 +76,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    /* background-image: url("../images/computer-repair.png"); */
-    /* background-blend-mode: luminosity; */
+    background-image: url("../images/p8.png");
     background-repeat: no-repeat;
     background-size: 100%;
+    transition: background-image 0.5s ease;
 }
 
 /* .header::before {
@@ -92,7 +92,7 @@ body {
 } */
 
 .newBackground01 {
-    background-image: url("../images/p8.png")
+    background-image: url("../images/computer-repair.png")
     /* background-blend-mode: normal; */
 }
 
@@ -127,22 +127,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* .graph {
-    display: none;
-    box-sizing: border-box;
-    width: 50%;
-    height: 100%;
-    background-image: url("../images/Untitled-2.png");
-    background-repeat: repeat;
-    background-position: right bottom;
-    background-size: 200px;
-    margin: 10px auto;
-    border: 1px solid rgb(62, 134, 179);
-    border: 1px solid rgb(150, 150, 150);
-    box-shadow: 1px 1px 2px #888888;
-    transition: background-image 500ms ease;
-} */
 
 .title h1 {
     display: block;
@@ -248,34 +232,12 @@ body {
     font-weight: 800;
     color: rgb(62, 134, 179);
     /* text-shadow: 2px 2px 1px #cacaca; */
-    background: radial-gradient(rgba(255, 255, 255, 0.568) 50%, rgba(255, 255, 255, 0) 75%);
     text-shadow: 1px 1px 2px #cacaca;
 }
 
 .nav_dzialy a:hover {
     color: rgb(255, 71, 71);
 }
-
-
-/* .graph {
-    box-sizing: border-box;
-    width: 92%;
-    height: 100%;
-    background-image: url("../images/t6.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 200px;
-    margin: 5px 4% 4% 4%;
-    border: 1px solid rgb(62, 134, 179);
-    box-shadow: 2px 2px 2px #888888;
-    transition: background-image 500ms ease;
-} */
-/* --------------------------------------------------------- */
-
-
-
-
-
 
 /*-------------  4. footer  -------------------------------- */
 /* --------------------------------------------------------- */
