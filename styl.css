@@ -77,7 +77,7 @@ body {
     background-image: url("../images/tlo10a.png");
     padding: 10px;
     padding-top: 35px;
-    transition: background-image 1s ease-out;
+    transition: background-image 0.5s ease;
     /* background-blend-mode: color-burn; */
     background-position-x: 65%;
     background-position-y: bottom;
@@ -280,8 +280,8 @@ body {
 
 
     text-decoration: none;
-    letter-spacing: 2px;
-    font-weight: 400;
+    letter-spacing: 1px;
+    font-weight: 800;
     /* color: rgb(240, 240, 240); */
     color: white;
     text-shadow: 2px 2px 0 rgb(25, 55, 73);
@@ -291,7 +291,6 @@ body {
 
 .nav_dzialy a:hover {
     color: rgb(255, 71, 71);
-    text-shadow: 2px 2px 0 rgb(2, 3, 3);
 }
 
 .materialy #wyklady {
@@ -358,20 +357,18 @@ body {
 }
 
 .menu_przedmioty {
-    box-sizing: border-box;
     padding-top: 25px;
     padding-bottom: 10px;
+    padding-left: 10px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .menu_przedmioty ul {
-    box-sizing: border-box;
     width: 100%;
 }
 
 .menu_przedmioty li {
-    box-sizing: border-box;
     position: relative;
     padding-left: 25px;
     padding-right: 15px;
@@ -381,14 +378,11 @@ body {
     align-items: center;
     width: 100%;
     transition: transform 0.5 ease;
-    /* background-size: 100% 100%; */
-
-
+    /* transition-duration: 0.5s; */
 }
 
 .menu_przedmioty li:hover {
-    /* transform: scale(1.2) translateX(22px); */
-    /* transform: translateX(18px); */
+    transform: scale(1.2) translateX(22px);
 }
 
 .pointer::before {
@@ -410,7 +404,6 @@ body {
 
 .menu_przedmioty a {
     display: block;
-    box-sizing: border-box;
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: 800;
@@ -432,62 +425,22 @@ body {
     
     .menu_przedmioty li {
         display: block;
-        box-sizing: border-box;
-        /* padding-left: 30px;
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px; */
-        display: flex;
-        align-items: center;
-        width: 100%;
-        /* transition: transform 0.5s ease; */
-        /* background-image: linear-gradient(90deg,  rgba(120, 120, 120, 0.5), rgba(120, 120, 120, 0.2), rgba(120, 120, 120, 0)); */
-        /* transition: background-color 1s ease ; */
-    }
-    
-    .menu_przedmioty li a {
-        display: block;
-        box-sizing: border-box;
         padding-left: 30px;
         padding-right: 15px;
         padding-top: 5px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
+        display: flex;
+        align-items: center;
         width: 100%;
-        height: 100%;
-        /* background-image: linear-gradient(90deg, rgba(255, 71, 71, 0), rgb(255, 71, 71, 0.795), rgba(255, 71, 71, 0)); */
-        background-size: 100% 1px;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        margin-bottom: -5px;
+        transition-property: transform;
+        transition-duration: 0.5s;
     }
-        
-    
-    /* .menu_przedmioty li:nth-child(2n-1) {
-        border-bottom: 1px solid rgb(255, 71, 71);
-        border-top: 1px solid rgb(255, 71, 71);
-        background-color: rgba(62, 134, 179,0.25);
-    } */
-
-
-    .menu_przedmioty li:hover {
-        /* background-image: linear-gradient(90deg,  rgb(255, 71, 71, 0.795), rgba(255, 71, 71, 0)); */
-        /* background-image: linear-gradient(90deg, rgba(255, 71, 71, 0), rgb(255, 71, 71, 0.795), rgba(255, 71, 71, 0)); */
-        background-color: rgba(62, 134, 179,0.3);
-        background-size: 100% 1px;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        /* box-shadow: 0 1px 0 rgb(255, 71, 71); */
-        border-bottom: 1px solid rgb(255, 71, 71);
-        border-top: 1px solid rgb(255, 71, 71);
-    }
-        
     
     .menu_przedmioty li:first-child{
-        margin-left: 0;
-
+        margin-left: -10px;
     }
     .menu_przedmioty li:last-child{
-        margin-left: 0;
+        margin-left: -10px;
     }
     .pointer::before {
         position: absolute;
