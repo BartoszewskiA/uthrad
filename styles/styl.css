@@ -348,42 +348,27 @@ body {
 /* ------------  7. nav_przedmioty ------------------------- */
 /* --------------------------------------------------------- */
 .nav_przedmioty {
-    box-sizing: border-box;
     background: linear-gradient(to right top, darkgray 20%, rgb(150, 150, 150) 80%);
-    width: 100%;
-    min-height: 100px;
     border-bottom: 2px solid rgb(255, 71, 71);
     border-right: none;
- 
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .menu_przedmioty {
-    box-sizing: border-box;
-    padding-top: 25px;
-    padding-bottom: 10px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .menu_przedmioty ul {
-    box-sizing: border-box;
-    width: 100%;
 }
 
 .menu_przedmioty li {
     box-sizing: border-box;
     position: relative;
-    padding-left: 25px;
-    padding-right: 15px;
-    padding-top: 2px;
-    padding-bottom: 2px;
     display: flex;
     align-items: center;
-    width: 100%;
     transition: transform 0.5 ease;
-    /* background-size: 100% 100%; */
-
-
 }
 
 .menu_przedmioty li:hover {
@@ -396,14 +381,10 @@ body {
     position: absolute;
     font-size: 2rem;
     display: block;
-    margin-left: -23px;
-    padding-right: 0;
     font-weight: 800;
-    padding-right: 10px;
-    padding-top: 0;
-    padding-bottom: 0;
     color: rgb(255, 71, 71);
     text-shadow: 2px 2px 0 #888888;
+    padding-left: 15px;
 }
 
 
@@ -416,6 +397,10 @@ body {
     font-weight: 800;
     color: rgb(240, 240, 240);
     text-shadow: 2px 2px 0 #888888;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 38px;
+    padding-right: 5px;
 }
 
 .menu_przedmioty li:first-child a, .menu_przedmioty li:last-child a {
@@ -425,81 +410,57 @@ body {
 
 @media screen and (min-width: 750px) {
     .nav_przedmioty {
-        min-width: 200px;
+        min-width: 220px;
         flex: 1;
         border-right: 3px solid rgb(255, 71, 71);
+        padding-top: 30px;
     }
     
     .menu_przedmioty li {
-        display: block;
-        box-sizing: border-box;
-        /* padding-left: 30px;
-        padding-right: 15px;
-        padding-top: 5px;
-        padding-bottom: 5px; */
+        
         display: flex;
         align-items: center;
         width: 100%;
-        /* transition: transform 0.5s ease; */
-        /* background-image: linear-gradient(90deg,  rgba(120, 120, 120, 0.5), rgba(120, 120, 120, 0.2), rgba(120, 120, 120, 0)); */
-        /* transition: background-color 1s ease ; */
     }
     
     .menu_przedmioty li a {
         display: block;
-        box-sizing: border-box;
-        padding-left: 30px;
-        padding-right: 15px;
         padding-top: 5px;
-        padding-bottom: 10px;
-        width: 100%;
-        height: 100%;
-        /* background-image: linear-gradient(90deg, rgba(255, 71, 71, 0), rgb(255, 71, 71, 0.795), rgba(255, 71, 71, 0)); */
-        background-size: 100% 1px;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        margin-bottom: -5px;
+        padding-bottom: 5px;
+        padding-left: 28px;
+        padding-right: 5px;
     }
-        
-    
-    /* .menu_przedmioty li:nth-child(2n-1) {
-        border-bottom: 1px solid rgb(255, 71, 71);
-        border-top: 1px solid rgb(255, 71, 71);
-        background-color: rgba(62, 134, 179,0.25);
-    } */
 
 
     .menu_przedmioty li:hover {
-        /* background-image: linear-gradient(90deg,  rgb(255, 71, 71, 0.795), rgba(255, 71, 71, 0)); */
-        /* background-image: linear-gradient(90deg, rgba(255, 71, 71, 0), rgb(255, 71, 71, 0.795), rgba(255, 71, 71, 0)); */
+        box-sizing: border-box;
         background-color: rgba(62, 134, 179,0.3);
-        background-size: 100% 1px;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        /* box-shadow: 0 1px 0 rgb(255, 71, 71); */
+        /* background-image: linear-gradient(90deg, rgba(62, 134, 179,0.6), rgba(62, 134, 179, 0.3)); */
         border-bottom: 1px solid rgb(255, 71, 71);
         border-top: 1px solid rgb(255, 71, 71);
+        margin-top: -1px;
+        margin-bottom: -1px;
     }
         
     
     .menu_przedmioty li:first-child{
-        margin-left: 0;
+     padding-top: 7px;
+        padding-bottom: 7px;
 
     }
     .menu_przedmioty li:last-child{
-        margin-left: 0;
+        padding-bottom: 7px;
+        padding-top: 7px;
     }
     .pointer::before {
         position: absolute;
         content: '>';
         font-size: 3rem;
         display: block;
-        margin-left: -25px;
-        padding-right: 0;
         font-weight: 800;
-        padding-right: 10px;
         color: rgb(255, 71, 71);
         text-shadow: 2px 2px 0 #888888;
+        padding-left: 5px;
     }
 
     .pointer_shadow::before {
@@ -515,13 +476,6 @@ body {
         text-shadow: 2px 2px 0 #888888;
     }
 
-   
-
-    .menu_przedmioty li:hover {
-        /* transform: translateX(20px) scale3d(1.2, 1.1, 0.75); */
-
-
-    }
 }
 
 /* ------------  8. content -------------------------------- */
