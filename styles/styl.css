@@ -42,6 +42,7 @@ p {
 html {
     font-size: 62.5%;
     font-family: "Roboto", sans-serif;
+    min-width: 360px;
 }
 
 body {
@@ -49,6 +50,7 @@ body {
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.4;
+    
 }
 
 
@@ -95,12 +97,12 @@ body {
 } */
 
 .newBackground01 {
-    background-image: url("../images/tlo10_zoom.png")
+    background-image: url("../images/tlo10b.png")
         /* background-blend-mode: normal; */
 }
 
 .newBackground02 {
-    background-image: url("../images/p8.png");
+    background-image: url("../images/tlo10c.png");
     background-blend-mode: color-burn;
 }
 
@@ -116,12 +118,11 @@ body {
 
 .logo {
     box-sizing: border-box;
-    /* padding: 25px; */
     text-align: left;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     width: 40vw;
-    min-width: 130px;
-    transition: filter 0.7s ease;
+    min-width: 140px;
+    
 
 }
 
@@ -135,10 +136,14 @@ body {
 }
 
 .logo p {
-    font-size: 1.25rem;
-    transform: translateY(-10px);
-    color: rgb(62, 134, 179);
-    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: 400;
+    text-shadow: 0 0 0  2px black;
+    padding-left: 10px;
+    border-left: 2px solid rgb(255, 71, 71);
+    background-color: rgba(62, 134, 179, 0.5);
 }
 
 @media screen and (min-width: 750px){
@@ -236,14 +241,6 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content:space-around;
-
-    
-    /* border: 1px solid rgba(62, 134, 179, 0.301); */
-    /* box-shadow: 1px 1px 2px #888888; */
-    /* border-radius: 5px; */
-    /* background-color: rgba(255, 255, 255, 0.4); */
-
-
 }
 
 @media screen and (min-width: 1150px) {
@@ -258,45 +255,38 @@ body {
     }
     .nav_dzialy a {
         padding: 5px 30px 3px 30px;
+        
     }
 }
 
-.nav_dzialy li {
-    /* background-color: rgba(230, 230, 230, 0.5); */
-    /* box-sizing: border-box; */
-    /* display: block; */
-}
 
 .nav_dzialy a {
-    /* box-sizing: border-box; */
     display: block;
     padding: 5px 5px 3px 5px;
-    /* text-decoration: none;
-    letter-spacing: 1px;
-    font-weight: 800;
-    color: rgb(62, 134, 179); */
-    /* text-shadow: 2px 2px 1px #cacaca; */
-    /* text-shadow: 1px 1px 2px #cacaca; */
-
-
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 400;
-    /* color: rgb(240, 240, 240); */
     color: white;
     text-shadow: 2px 2px 0 rgb(25, 55, 73);
+    border-bottom: 1px solid  rgb(255, 71, 71);
 
 
 }
 
 .nav_dzialy a:hover {
-    color: rgb(255, 71, 71);
-    text-shadow: 2px 2px 0 rgb(2, 3, 3);
+    /* color: rgb(255, 71, 71);
+    text-shadow: 2px 2px 0 rgb(2, 3, 3); */
+    /* background-image: linear-gradient(90deg, rgba(62, 134, 179,0.6), rgba(255, 71, 71, 0.3), rgba(62, 134, 179, 0.3)); */
+    /* border-left: 1px solid rgb(255, 71, 71); */
+    /* border-right: 1px solid rgb(255, 71, 71); */
+    border-bottom: 3px solid rgb(255, 71, 71);
 }
 
-.materialy #wyklady {
+
+
+.materialy #wyklady a{
     /* color: rgb(255, 71, 71); */
-    border-bottom: 3px solid  rgb(255, 71, 71);
+ border-bottom: 3px solid  rgb(255, 71, 71);
 }
 
 .prakt #praktyki {
@@ -353,6 +343,7 @@ body {
     border-right: none;
     padding-top: 15px;
     padding-bottom: 10px;
+    
 }
 
 .menu_przedmioty {
@@ -360,20 +351,20 @@ body {
     flex-direction: column;
 }
 
-.menu_przedmioty ul {
-}
-
 .menu_przedmioty li {
     box-sizing: border-box;
     position: relative;
     display: flex;
     align-items: center;
-    transition: transform 0.5 ease;
+    transition: transform 0.5s ease;
+}
+.menu_przedmioty li a {
+    transition: transform 0.5s ease;
 }
 
-.menu_przedmioty li:hover {
-    /* transform: scale(1.2) translateX(22px); */
-    /* transform: translateX(18px); */
+.menu_przedmioty li a:hover {
+    /* transform: scale(1.1) */
+    /* transform: translateX(10px); */
 }
 
 .pointer::before {
