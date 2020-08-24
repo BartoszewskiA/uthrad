@@ -17,7 +17,5 @@ $(document).ready(function () {
         } else {
             $(this).closest(".read_more").find(".visible_selection").addClass("winieta")
         }
-
-
     });
 })

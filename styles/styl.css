@@ -50,9 +50,8 @@ body {
     font-size: 14px;
     font-size: 1.4rem;
     line-height: 1.4;
-    
-}
 
+}
 
 /* ------------  2. wrapeer -------------------------------- */
 /* --------------------------------------------------------- */
@@ -60,19 +59,18 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* ------------  3. header --------------------------------- */
 /* --------------------------------------------------------- */
-/* !!!!????????? */
-@media screen and (min-width: 750px) {}
 
 .header {
+    overflow: hidden;
     min-height: 150px;
     box-sizing: border-box;
     background-repeat: repeat-x;
     position: relative;
-    /* background-color: rgb(230, 230, 230); */
     box-shadow: 0 10px 8px #888888;
     display: flex;
     justify-content: space-between;
@@ -84,17 +82,8 @@ body {
     background-position-x: 65%;
     background-position-y: bottom;
     background-color: rgb(62, 134, 179);
- 
 }
 
-/* .header::before {
-    content: "";
-    position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(230,230,230, .5);
-  filter: grayscale(100%);
-} */
 
 .newBackground01 {
     background-image: url("../images/tlo10b.png")
@@ -119,107 +108,132 @@ body {
 .logo {
     box-sizing: border-box;
     text-align: left;
-    /* padding-left: 30px; */
-    width: 40vw;
-    min-width: 140px;
-    
-
+    width: 30vw;
 }
 
 .filtr_logo {
     /* filter: saturate(180%) brightness(120%) drop-shadow(4px 4px 4px black); */
 }
+
 .logo img {
-    transform: scale(0.8);
-    /* filter: drop-shadow(1px 1px 2px #888888); */
+    transform: scale(0.7) translateX(-30px);
+
     margin: 0;
 }
 
 .logo p {
-    font-size: 1.4rem;
-    letter-spacing: 2px;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     color: white;
     font-weight: 400;
-    text-shadow: 0 0 0  2px black;
-    padding-left: 10px;
+    text-shadow: 0 0 0 2px black;
+    padding-left: 5px;
     border-left: 2px solid rgb(255, 71, 71);
     background-color: rgba(62, 134, 179, 0.5);
 }
 
-@media screen and (min-width: 750px){
+@media screen and (min-width: 400px) {
+    
+    .logo {
+        width: 40vw;
+        min-width: 150px;
+        padding-left: 15px;
+    }
+    .logo img {
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (min-width: 750px) {
     .logo {
         text-align: left;
-        padding-left: 30px;
+        padding-left: 15px;
+    }
+    .logo p {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+        padding-left: 10px;;
+    }
 }
-
-}
-
 
 .title {
     box-sizing: border-box;
-    width: 60vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 68vw;
+    margin-top: 20px;
+    hyphens: auto;
 }
 
 .title h1 {
     font-family: 'Audiowide';
-    display: block;
+    letter-spacing: 1px;
     font-size: 1.8rem;
     font-weight: 800;
-    /* text-shadow: 2px 2px 1px #888888; */
-    margin: 5px auto 12px auto;
     text-shadow: 0 0 4px black;
-    /* background-color: rgba(62, 134, 179, 0.6); */
-    /* border: 1px solid red;; */
     color: white;
 }
+
+
+@media screen and (min-width: 400px) {
+   .title {
+    width: 60vw;
+   }
+    .title h1 {
+        letter-spacing: 3px;
+        font-size: 1.8rem;
+    }
+}
+
 
 @media screen and (min-width: 750px) {
     .title {
         width: 60vw;
+        margin-top: 10px;
     }
 
     .title h1 {
         box-sizing: border-box;
         font-size: 3rem;
-        letter-spacing: 2px;
-        margin-top: 20px;
-        margin-bottom: 5px;
-        margin-left: 25px;
-        margin-right: 25px;
-        text-shadow: 0 0 3px black;
     }
 }
 
 .title p {
-    /* color: rgb(70, 70, 70); */
+    /* display: none; */
     color: white;
-    font-size: 1.1rem;
-    font-weight: 800;
-    letter-spacing: 1.2px;
-    margin: auto 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
     padding-left: 10px;
-    display: none;
+    margin-top: 10px;
+    margin-left: 30%;
     border-left: 3px solid rgb(255, 71, 71);
-    background-color: rgba(62, 134, 179, 0.5);
+    background-color: rgba(62, 134, 179, 0.6);
 }
 
-@media screen and (min-width: 1150px) {
+.znikajace {
+    display: none;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
     .title p {
+        text-decoration: none;
         display: block;
     }
-
-    .title span {
-        font-size: 1.3rem;
-        /* color: rgb(82, 82, 82); */
+    .title b {
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+    .znikajace {
+        display: inline;
     }
 }
 
 
 /* ------------  4. nav_dzialy ----------------------------- */
+/* --------------------------------------------------------- */
 .nav_dzialy {
     position: fixed;
     z-index: 20;
@@ -227,11 +241,8 @@ body {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    background-color:  rgb(62, 134, 179);
-    /* border-bottom: 1px solid  rgb(255, 71, 71); */
-    background: linear-gradient(to bottom , rgb(62, 134, 179) 40% ,rgba(62, 134, 179, 0.8));
-    /* box-shadow: 0 2px 2px #888888; */
-
+    background-color: rgb(62, 134, 179);
+    background: linear-gradient(to bottom, rgb(62, 134, 179) 40%, rgba(62, 134, 179, 0.8));
 }
 
 .nav_dzialy ul {
@@ -240,7 +251,11 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    justify-content:space-around;
+    justify-content: space-around;
+}
+
+.nav_dzialy a:hover {
+    border-bottom: 3px solid rgb(255, 71, 71);
 }
 
 @media screen and (min-width: 1150px) {
@@ -249,13 +264,15 @@ body {
         flex-wrap: nowrap;
         padding-right: 20px;
     }
+
     .nav_dzialy li {
         padding-right: 10px;
         padding-left: 10px;
     }
+
     .nav_dzialy a {
         padding: 5px 30px 3px 30px;
-        
+
     }
 }
 
@@ -268,39 +285,30 @@ body {
     font-weight: 400;
     color: white;
     text-shadow: 2px 2px 0 rgb(25, 55, 73);
-    border-bottom: 1px solid  rgb(255, 71, 71);
-
-
+    border-bottom: 1px solid rgb(255, 71, 71);
 }
 
-.nav_dzialy a:hover {
-    /* color: rgb(255, 71, 71);
-    text-shadow: 2px 2px 0 rgb(2, 3, 3); */
-    /* background-image: linear-gradient(90deg, rgba(62, 134, 179,0.6), rgba(255, 71, 71, 0.3), rgba(62, 134, 179, 0.3)); */
-    /* border-left: 1px solid rgb(255, 71, 71); */
-    /* border-right: 1px solid rgb(255, 71, 71); */
+.pointer_d a {
     border-bottom: 3px solid rgb(255, 71, 71);
 }
 
+/*------------------ menu pływające -------------------------*/
+
+nav aside {
+    width: 50px;
+    height: 100px;
+    background-image: linear-gradient(20deg, rgba(62, 134, 179, 0.4), rgba(62, 134, 179, .1));
+    border-top: 1px solid rgba(255, 71, 71, 0.8);
+    border-right: 1px solid rgba(255, 71, 71, 0.8);
+    border-bottom: 1px solid rgba(255, 71, 71, 0.8);
+    left: 0;
+    top: 80vh;
+    position: fixed;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
 
-.materialy #wyklady a{
-    /* color: rgb(255, 71, 71); */
- border-bottom: 3px solid  rgb(255, 71, 71);
 }
-
-.prakt #praktyki {
-    color: rgb(255, 71, 71);
-}
-
-.akt #aktualnosci {
-    color: rgb(255, 71, 71);
-}
-
-.omnie #o_mnie {
-    color: rgb(255, 71, 71);
-}
-
 
 
 /*-------------  5. footer  -------------------------------- */
@@ -343,7 +351,7 @@ body {
     border-right: none;
     padding-top: 15px;
     padding-bottom: 10px;
-    
+
 }
 
 .menu_przedmioty {
@@ -358,6 +366,7 @@ body {
     align-items: center;
     transition: transform 0.5s ease;
 }
+
 .menu_przedmioty li a {
     transition: transform 0.5s ease;
 }
@@ -372,7 +381,7 @@ body {
     position: absolute;
     font-size: 2rem;
     display: block;
-    font-weight: 800;
+    font-weight: 400;
     color: rgb(255, 71, 71);
     text-shadow: 2px 2px 0 #888888;
     padding-left: 15px;
@@ -385,7 +394,7 @@ body {
     box-sizing: border-box;
     text-decoration: none;
     letter-spacing: 1px;
-    font-weight: 800;
+                /* font-weight: 800; */
     color: rgb(240, 240, 240);
     text-shadow: 2px 2px 0 #888888;
     padding-top: 5px;
@@ -394,7 +403,8 @@ body {
     padding-right: 5px;
 }
 
-.menu_przedmioty li:first-child a, .menu_przedmioty li:last-child a {
+.menu_przedmioty li:first-child a,
+.menu_przedmioty li:last-child a {
     color: rgb(220, 220, 220);
 }
 
@@ -406,14 +416,14 @@ body {
         border-right: 3px solid rgb(255, 71, 71);
         padding-top: 30px;
     }
-    
+
     .menu_przedmioty li {
-        
+
         display: flex;
         align-items: center;
         width: 100%;
     }
-    
+
     .menu_przedmioty li a {
         display: block;
         padding-top: 5px;
@@ -425,30 +435,32 @@ body {
 
     .menu_przedmioty li:hover {
         box-sizing: border-box;
-        background-color: rgba(62, 134, 179,0.3);
+        background-color: rgba(62, 134, 179, 0.3);
         /* background-image: linear-gradient(90deg, rgba(62, 134, 179,0.6), rgba(62, 134, 179, 0.3)); */
         border-bottom: 1px solid rgb(255, 71, 71);
         border-top: 1px solid rgb(255, 71, 71);
         margin-top: -1px;
         margin-bottom: -1px;
     }
-        
-    
-    .menu_przedmioty li:first-child{
-     padding-top: 7px;
+
+
+    .menu_przedmioty li:first-child {
+        padding-top: 7px;
         padding-bottom: 7px;
 
     }
-    .menu_przedmioty li:last-child{
+
+    .menu_przedmioty li:last-child {
         padding-bottom: 7px;
         padding-top: 7px;
     }
+
     .pointer::before {
         position: absolute;
         content: '>';
-        font-size: 3rem;
+        font-size: 2.8rem;
         display: block;
-        font-weight: 800;
+        /* font-weight: 800; */
         color: rgb(255, 71, 71);
         text-shadow: 2px 2px 0 #888888;
         padding-left: 5px;
@@ -479,10 +491,9 @@ body {
     padding-top: 30px;
     padding-bottom: 20px;
     background-color: rgb(230, 230, 230);
-    background-image: linear-gradient(rgb(225, 225, 225) 1px , transparent 0), linear-gradient(90deg, rgb(225, 225, 225) 1px , transparent 0);
+    background-image: linear-gradient(rgb(225, 225, 225) 1px, transparent 0), linear-gradient(90deg, rgb(225, 225, 225) 1px, transparent 0);
     background-size: 10px 10px;
     background-repeat: repeat;
-    /* box-shadow: 0 -10px 8px #888888; */
 }
 
 @media screen and (min-width: 750px) {
@@ -611,13 +622,14 @@ article h3::after {
     display: flex;
     flex-direction: column;
 }
+
 .winieta::after {
-content: " ";
-z-index: 30;
-display: block;
-height: 40px;
-margin-top: -40px;
-background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255, 0.7), rgba(255, 255, 255, 1));
+    content: " ";
+    z-index: 30;
+    display: block;
+    height: 40px;
+    margin-top: -40px;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1));
 }
 
 .hiden_selection {
@@ -634,7 +646,7 @@ background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255, 0.7), rgba(25
 }
 
 .menu_wyklady caption {
- padding-bottom: 10px;
+    padding-bottom: 10px;
 
 }
 
