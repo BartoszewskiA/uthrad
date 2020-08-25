@@ -2,6 +2,10 @@ $(document).ready(function () {
 
     // $(".hiden_selection").slideToggle();
 
+    $("#button_hide").click(function () {
+        $(".menu_przedmioty").slideToggle();
+    });
+
     $(".read_more .switcher").click(function () {
 
         $(this).closest(".read_more").find(".hiden_selection").slideToggle();

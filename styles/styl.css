@@ -133,12 +133,13 @@ body {
 }
 
 @media screen and (min-width: 400px) {
-    
+
     .logo {
         width: 40vw;
         min-width: 150px;
         padding-left: 15px;
     }
+
     .logo img {
         transform: scale(0.8);
     }
@@ -149,10 +150,12 @@ body {
         text-align: left;
         padding-left: 15px;
     }
+
     .logo p {
         font-size: 1.4rem;
         letter-spacing: 2px;
-        padding-left: 10px;;
+        padding-left: 10px;
+        ;
     }
 }
 
@@ -174,9 +177,10 @@ body {
 
 
 @media screen and (min-width: 400px) {
-   .title {
-    width: 60vw;
-   }
+    .title {
+        width: 60vw;
+    }
+
     .title h1 {
         letter-spacing: 3px;
         font-size: 1.8rem;
@@ -222,10 +226,12 @@ body {
         text-decoration: none;
         display: block;
     }
+
     .title b {
         font-size: 1.4rem;
         font-weight: 800;
     }
+
     .znikajace {
         display: inline;
     }
@@ -272,7 +278,6 @@ body {
 
     .nav_dzialy a {
         padding: 5px 30px 3px 30px;
-
     }
 }
 
@@ -292,24 +297,60 @@ body {
     border-bottom: 3px solid rgb(255, 71, 71);
 }
 
+
 /*------------------ menu pływające -------------------------*/
-
 nav aside {
-    width: 50px;
-    height: 100px;
-    background-image: linear-gradient(20deg, rgba(62, 134, 179, 0.4), rgba(62, 134, 179, .1));
-    border-top: 1px solid rgba(255, 71, 71, 0.8);
-    border-right: 1px solid rgba(255, 71, 71, 0.8);
-    border-bottom: 1px solid rgba(255, 71, 71, 0.8);
-    left: 0;
-    top: 80vh;
-    position: fixed;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
 }
 
+nav aside a {
+    display: block;
+    width: 10%;
+    text-align: center;
+}
+
+nav aside img {
+    width: 100%;
+    transition: filter 0.3s ease;
+    filter: opacity(60%) sepia(50%);
+}
+
+nav aside img:hover {
+    filter: none;
+}
+
+@media screen and (min-width: 750px) {
+    nav aside {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    nav aside a {
+        display: block;
+        width: 50%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    nav aside img {
+        width: 65%;
+        transition: filter 0.3s ease;
+        filter: opacity(60%) sepia(50%);
+    }
+
+    nav aside img:hover {
+        filter: none;
+    }
+
+}
 
 /*-------------  5. footer  -------------------------------- */
 /* --------------------------------------------------------- */
@@ -351,6 +392,7 @@ nav aside {
     border-right: none;
     padding-top: 15px;
     padding-bottom: 10px;
+    position: relative;
 
 }
 
@@ -394,7 +436,7 @@ nav aside {
     box-sizing: border-box;
     text-decoration: none;
     letter-spacing: 1px;
-                /* font-weight: 800; */
+    /* font-weight: 800; */
     color: rgb(240, 240, 240);
     text-shadow: 2px 2px 0 #888888;
     padding-top: 5px;
@@ -479,6 +521,23 @@ nav aside {
         text-shadow: 2px 2px 0 #888888;
     }
 
+
+
+}
+
+
+#button_hide {
+    z-index: 10;
+    width: 20px;
+    height: 10px;
+    background-image: linear-gradient(rgba(255, 71, 71, 0.5) 1px, transparent 2px, transparent 4px,
+            rgba(255, 71, 71, 0.7) 5px, transparent 6px, transparent 8px,
+            rgb(255, 71, 71) 9px, transparent 10px);
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    /* transform: translateY(4px); */
+    cursor: pointer;
 }
 
 /* ------------  8. content -------------------------------- */
