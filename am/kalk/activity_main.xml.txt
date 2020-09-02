@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.28" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineH06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineW01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineW02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineW03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+
+    <TextView
+
+        android:id="@+id/wyswietlacz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:textSize="25pt"
+        android:textAlignment="gravity"
+        android:gravity="right|center"
+        android:paddingRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH01"
+
+        />
+
+
+    <Button
+        android:id="@+id/kasuj"
+        style="@style/stylPrzycisku"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH01"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH02"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineW02"
+        android:text="@string/opisKasuj"
+        android:onClick="kasuj"
+    />
+    <Button
+        android:id="@+id/wstecz"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH01"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH02"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW02"
+        app:layout_constraintRight_toRightOf="@id/guidelineW03"
+        android:textSize="@dimen/czcionkaPrzycisku"
+        android:text="x"
+        style="@style/stylPrzycisku"
+        android:onClick="wstecz"/>
+
+    <Button
+        android:id="@+id/dziel"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH01"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH02"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW03"
+        app:layout_constraintRight_toRightOf="parent"
+        android:shadowDx="@android:integer/config_longAnimTime"
+        android:text="/"
+        android:textSize="@dimen/czcionkaPrzycisku"
+        style="@style/stylPrzycisku"
+        android:onClick="dzialanie"
+        />
+
+
+    <Button
+        android:id="@+id/procent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH02"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH03"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineW01"
+        android:text="%"
+        style="@style/stylPrzycisku"
+        android:onClick="procent"
+        />
+    <Button
+        android:id="@+id/pierwiastek"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH02"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH03"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW01"
+        app:layout_constraintRight_toRightOf="@id/guidelineW02"
+        android:text="sqrt"
+        style="@style/stylPrzycisku"
+        android:onClick="pierwiastek"
+        />
+    <Button
+        android:id="@+id/kwadrat"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH02"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH03"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW02"
+        app:layout_constraintRight_toRightOf="@id/guidelineW03"
+        android:text="@string/opisPierwiastek"
+        style="@style/stylPrzycisku"
+        android:onClick="kwadrat"/>
+
+    <Button
+        android:id="@+id/razy"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH02"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH03"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW03"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="*"
+        style="@style/stylPrzycisku"
+        android:onClick="dzialanie"
+        />
+    <Button
+        android:id="@+id/p7"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH03"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH04"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineW01"
+        android:text="7"
+        style="@style/stylPrzycisku"
+        android:onClick="dodajCyfre"
+        />
+    <Button
+        android:id="@+id/p8"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH03"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH04"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW01"
+        app:layout_constraintRight_toRightOf="@id/guidelineW02"
+        android:text="8"
+        style="@style/stylPrzycisku"
+        android:onClick="dodajCyfre"
+        />
+    <Button
+        android:id="@+id/p9"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH03"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH04"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW02"
+        app:layout_constraintRight_toRightOf="@id/guidelineW03"
+        android:text="9"
+        android:onClick="dodajCyfre"
+        style="@style/stylPrzycisku"
+        />
+    <Button
+        android:id="@+id/minus"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH03"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH04"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW03"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="-"
+        style="@style/stylPrzycisku"
+        android:onClick="dzialanie"
+        />
+    <Button
+        android:id="@+id/p4"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH04"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH05"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineW01"
+        android:text="4"
+        style="@style/stylPrzycisku"
+        android:onClick="dodajCyfre"
+        />
+    <Button
+        android:id="@+id/p5"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH04"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH05"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW01"
+        app:layout_constraintRight_toRightOf="@id/guidelineW02"
+        android:text="5"
+        android:onClick="dodajCyfre"
+        style="@style/stylPrzycisku"
+        />
+    <Button
+        android:id="@+id/p6"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH04"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH05"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW02"
+        app:layout_constraintRight_toRightOf="@id/guidelineW03"
+        android:text="6"
+        style="@style/stylPrzycisku"
+        android:onClick="dodajCyfre"
+        />
+    <Button
+        android:id="@+id/plus"
+
+        app:layout_constraintTop_toBottomOf="@id/guidelineH04"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH05"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW03"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="+"
+        style="@style/stylPrzycisku"
+        android:onClick="dzialanie"
+        />
+    <Button
+        android:id="@+id/p1"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH05"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH06"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineW01"
+        android:text="1"
+        style="@style/stylPrzycisku"
+        android:onClick="dodajCyfre"
+
+    />
+    <Button
+        android:id="@+id/p2"
+        style="@style/stylPrzycisku"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH05"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH06"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW01"
+        app:layout_constraintRight_toRightOf="@id/guidelineW02"
+        android:text="2"
+        android:onClick="dodajCyfre"
+
+        />
+    <Button
+        android:id="@+id/p3"
+        style="@style/stylPrzycisku"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH05"
+        app:layout_constraintBottom_toTopOf="@id/guidelineH06"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW02"
+        app:layout_constraintRight_toRightOf="@id/guidelineW03"
+        android:text="3"
+        android:onClick="dodajCyfre"
+        />
+    <Button
+        android:id="@+id/rowne"
+        style="@style/stylPrzycisku"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW03"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="="
+        android:onClick="rownaSie"
+        />
+
+    <Button
+        android:id="@+id/zmianaZnaku"
+        style="@style/stylPrzycisku"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH06"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guidelineW01"
+        android:text="+/-"
+        android:onClick="zmienZnak"
+        />
+    <Button
+        android:id="@+id/p0"
+        style="@style/stylPrzycisku"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH06"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW01"
+        app:layout_constraintRight_toRightOf="@id/guidelineW02"
+        android:text="0"
+        android:onClick="dodajCyfre"
+        />
+    <Button
+        android:id="@+id/przecinek"
+        style="@style/stylPrzycisku"
+        app:layout_constraintTop_toBottomOf="@id/guidelineH06"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineW02"
+        app:layout_constraintRight_toRightOf="@id/guidelineW03"
+        android:text=","
+        android:onClick="dodajPrzecinek"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,192 @@
+package bartoszewski.artur.kalkulator2019;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+public class MainActivity extends AppCompatActivity {
+
+
+    View p1,p2,p3,p4,p5,p6,p7,p8,p9,p0,plus,minus,razy,podzielic;
+    TextView wyswietlacz;
+    String tekstWyswietlacza ="";
+
+    Boolean czyDopisac = true;
+    Boolean przecinek = false; //informacje, czy liczba juz zawiera przecinek
+    int numerDzilania=0;
+    double liczba1, liczba2;
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        p1 = findViewById(R.id.p1);
+        p2 = findViewById(R.id.p2);
+        p3 = findViewById(R.id.p3);
+        p4 = findViewById(R.id.p4);
+        p5 = findViewById(R.id.p5);
+        p6 = findViewById(R.id.p6);
+        p7 = findViewById(R.id.p7);
+        p8 = findViewById(R.id.p8);
+        p9 = findViewById(R.id.p9);
+        p0 = findViewById(R.id.p0);
+        plus = findViewById(R.id.plus);
+        minus = findViewById(R.id.minus);
+        razy = findViewById(R.id.razy);
+        podzielic = findViewById(R.id.dziel);
+        wyswietlacz = findViewById(R.id.wyswietlacz);
+    }
+
+
+    public void dodajCyfre(View view) {
+
+        tekstWyswietlacza = wyswietlacz.getText().toString();
+        if (czyDopisac==false)
+        {
+            tekstWyswietlacza="";
+            czyDopisac=true;
+            przecinek=false;
+        }
+
+        if (tekstWyswietlacza.equals("0") || tekstWyswietlacza.equals("0.0"))  tekstWyswietlacza="";
+
+        if (view==p1) tekstWyswietlacza+="1";
+        else if (view==p2) tekstWyswietlacza+="2";
+        else if (view==p3) tekstWyswietlacza+="3";
+        else if (view==p4) tekstWyswietlacza+="4";
+        else if (view==p5) tekstWyswietlacza+="5";
+        else if (view==p6) tekstWyswietlacza+="6";
+        else if (view==p7) tekstWyswietlacza+="7";
+        else if (view==p8) tekstWyswietlacza+="8";
+        else if (view==p9) tekstWyswietlacza+="9";
+        else if (view==p0) tekstWyswietlacza+="0";
+
+        wyswietlacz.setText(tekstWyswietlacza);
+    }
+
+
+    public void kasuj(View view) {
+        tekstWyswietlacza="0";
+        wyswietlacz.setText(tekstWyswietlacza);
+        czyDopisac=false;
+        //przecinek=false;
+
+    }
+
+    public void dzialanie(View view) {
+        //if (numerDzilania!=0) wylicz();
+        //wyswietlacz.setText(tekstWyswietlacza);
+        if (view==plus) numerDzilania =1;
+        else if (view==minus) numerDzilania =2;
+        else if (view==razy) numerDzilania =3;
+        else if (view==podzielic) numerDzilania =4;
+        wyswietl(tekstWyswietlacza);
+        czyDopisac=false;
+        //przecinek=false;
+    }
+
+    public void wylicz(){
+        double wynik=0;
+        liczba2 = Double.valueOf(tekstWyswietlacza);
+        switch (numerDzilania)
+        {
+            case 1: wynik= liczba1+liczba2; break;
+            case 2: wynik= liczba1-liczba2;break;
+            case 3: wynik= liczba1*liczba2;break;
+            case 4: if (liczba2!=0) wynik= liczba1/liczba2; else wynik=0; break;
+        }
+        numerDzilania = 0;
+        tekstWyswietlacza = String.valueOf(wynik);
+    }
+
+    public void rownaSie(View view) {
+        wylicz();
+        wyswietl(tekstWyswietlacza);
+        czyDopisac= false;
+        przecinek=true;
+    }
+
+    public void zmienZnak(View view) {
+        if (!tekstWyswietlacza.equals("0")) {
+
+            double temp = Double.valueOf(tekstWyswietlacza);
+            tekstWyswietlacza = String.valueOf(-temp);
+
+        }
+        wyswietl(tekstWyswietlacza);
+
+    }
+
+    public void dodajPrzecinek(View view) {
+        if (przecinek==false)
+        {
+            if (tekstWyswietlacza.equals("")) tekstWyswietlacza="0.";
+            else tekstWyswietlacza+=".";
+            przecinek=true;
+            wyswietlacz.setText(tekstWyswietlacza);
+        }
+    }
+
+    public void pierwiastek(View view) {
+        double x = Double.valueOf(tekstWyswietlacza);
+        if (x>=0) {
+            x = Math.sqrt(x);
+            tekstWyswietlacza = String.valueOf(x);
+            wyswietl(tekstWyswietlacza);
+            czyDopisac=false;
+            przecinek=true;
+        }
+    }
+
+    public void kwadrat(View view) {
+        double x = Double.valueOf(tekstWyswietlacza);
+            x = x*x;
+            tekstWyswietlacza = String.valueOf(x);
+            wyswietl(tekstWyswietlacza);
+            czyDopisac=false;
+            przecinek=true;
+    }
+
+    public void procent(View view) {
+        double x = Double.valueOf(tekstWyswietlacza);
+        x = x/100;
+        tekstWyswietlacza = String.valueOf(x);
+        wyswietl(tekstWyswietlacza);
+        czyDopisac=false;
+        przecinek=true;
+    }
+
+    public void wstecz(View view){
+
+        String temp = tekstWyswietlacza.substring(0,tekstWyswietlacza.length()-1);
+
+        if ((
+                '.'==tekstWyswietlacza.toCharArray()[tekstWyswietlacza.length()-1]
+        ))
+            przecinek=false;
+        tekstWyswietlacza = temp;
+        if (tekstWyswietlacza.equals("")) tekstWyswietlacza="0";
+        wyswietlacz.setText(tekstWyswietlacza);
+    }
+
+    public void wyswietl(String s){
+        Double temp= Double.valueOf(s);
+        temp=temp*1000000000;
+        temp=(double)Math.round(temp);
+        temp=temp/1000000000.0;
+        s=String.valueOf(temp);
+        if (s.substring(s.length()-2,s.length()).equals(".0"))
+            s=s.substring(0,s.length()-2);
+        wyswietlacz.setText(s);
+    }
+}
+
+
+
+
+
