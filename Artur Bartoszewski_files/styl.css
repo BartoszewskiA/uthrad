@@ -1,0 +1,819 @@
+body {
+	background: #e2e2e0;
+	text-align: center;
+	font-size: 12px;
+	font-family: verdana, tahoma, arial, helvetica, sans-serif;
+}
+
+a,
+a:visited {
+	color: #2985b1;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #933000;
+	text-decoration: underline;
+}
+
+p {
+	margin: 5px 0;
+}
+
+ul {
+	margin: 10px 0 10px 0;
+}
+
+li {
+	padding-bottom: 5px;
+}
+
+li:hover {
+	padding-bottom: 5px;
+	color: #933000;
+}
+
+ul.lista_1 li {
+	margin: 0 0 0 25px;
+}
+
+
+ul li ul {
+	padding: 0 0 0 10px;
+}
+
+
+/*tabela strony*/
+
+#strona {
+	background-color: #fff;
+	margin: 20px auto;
+}
+
+#gora {
+	height: 65px;
+	width: 900px;
+	background-image: url('ramka/ramka_gora.jpg');
+}
+
+#materialy_st #baner {
+	height: 224px;
+	width: 900px;
+	background-image: url('ramka/baner_ms.jpg');
+	background-color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+}
+
+#dorobek #baner {
+	height: 224px;
+	width: 900px;
+	background-image: url('ramka/baner_d.jpg');
+	background-color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+}
+
+#praktyki #baner {
+	height: 224px;
+	width: 900px;
+	background-image: url('ramka/baner_pr.jpg');
+	background-color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+}
+
+#aktualnosci #baner {
+	height: 224px;
+	width: 900px;
+	background-image: url('ramka/baner_akt.jpg');
+	background-color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+}
+
+#linia_lewa {
+	background-image: url('ramka/ramka_lewa.jpg');
+	width: 9px;
+	background-color: #ffffff;
+}
+
+#pasek {
+	background-image: url('ramka/pasek_menu.jpg');
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	width: 212px;
+	min-height: 394px;
+	vertical-align: top;
+}
+
+#tresc {
+	vertical-align: top;
+	padding: 10px 10px 10px 25px;
+	background-color: #fff;
+	text-align: justify;
+	width: 637px;
+}
+
+#linia_prawa {
+	background-image: url('ramka/ramka_prawa.jpg');
+	width: 7px;
+	background-color: #ffffff;
+}
+
+#dol {
+	height: 23px;
+	width: 900px;
+	background-image: url('ramka/ramka_dol.jpg');
+	background-color: #ffffff;
+	text-align: left;
+	vertical-align: top;
+}
+
+#stopka {
+	background-color: #e2e2e0;
+	color: #808080;
+	font-style: italic;
+	font-size: 10px;
+	text-align: right;
+	padding: 4px 30px;
+}
+
+/*END tabela strony*/
+
+div.podpis {
+	position: absolute;
+	left: 100px;
+	top: 42px;
+	font-size: 13px;
+	color: #363636;
+	font-style: italic;
+}
+
+#baner {
+	position: relative;
+
+}
+
+#baner h1 {
+	margin: 212px 0 0 220px;
+	color: #933000;
+	/*#2985b1;*/
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	font-family: 'Georgia'
+
+}
+
+#baner h1 span {
+	background-image: url('ramka/tl.gif');
+	padding: 2px 7px;
+	border: 1px dotted #c0c0c0;
+	border-radius: 7px;
+
+}
+
+
+h2 {
+	font-family: verdana;
+	font-size: 17px;
+	margin: 10px 0 5px 0;
+	font-weight: normal;
+	color: #2985b1;
+}
+
+h3 {
+	font-family: verdana;
+	font-size: 15px;
+	margin: 10px 0 5px 0;
+	font-weight: normal;
+	color: #2985b1;
+}
+
+h4 {
+	margin: 7px 0 5px 0;
+}
+
+h5 {
+	font-family: verdana;
+	font-size: 13px;
+	margin: 2px 0 2px 0;
+	font-weight: bpld;
+	color: #2985b1;
+}
+
+h3.w_ramce {
+	clear: both;
+	margin: 10px 0 5px 0;
+	font-size: 14px;
+	color: #4d4948;
+	/* #900d12; */
+	font-weight: bold;
+	background-image: url('ramka/tl.gif');
+	padding: 2px 7px;
+	border: 1px dotted #414141;
+	border-radius: 7px;
+}
+
+div.t_okl {
+	margin: 25px 0 10px 0;
+	padding: 0 12px 0 12px;
+
+}
+
+/*pasek zak�adek*/
+
+div.ramka {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+
+#menu_1 * {
+	margin: 0;
+	padding: 0;
+
+}
+
+#menu_1 {
+	font-family: lucida, arial, sans-serif;
+	position: relative;
+	top: 22px;
+	left: 305px;
+
+}
+
+#menu_1 ul {}
+
+#menu_1 li {
+	list-style-type: none;
+	position: relative;
+	float: left;
+	margin-left: 2px;
+}
+
+
+#menu_1 a {
+	text-align: center;
+	display: block;
+	width: 143px;
+	height: 20px;
+	text-decoration: none;
+	color: #fff;
+	background-image: url('ramka/menu_1.jpg');
+	padding-top: 20px;
+	font-size: 12px;
+	transition: 0.5s all;
+}
+
+#menu_1 a:hover {
+
+	background-position: 0 -5px;
+	padding-top: 15px;
+	height: 25px;
+	transition: 0.5s all;
+
+}
+
+#materialy_st #menu_1 li.materialy a,
+#aktualnosci #menu_1 li.galeria a,
+#dorobek #menu_1 li.o_mnie a,
+#praktyki #menu_1 li.praktyki a {
+	background-position: 0 -10px;
+	height: 25px;
+	padding-top: 15px;
+}
+
+#materialy_st #menu_1 li.materialy,
+#aktualnosci #menu_1 li.galeria,
+#dorobek #menu_1 li.o_mnie a,
+#praktyki #menu_1 li.praktyki a {}
+
+
+/*END pasek zak�adak*/
+
+/*menu boczne*/
+
+.menu_2 * {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	z-index: 2;
+
+}
+
+.menu_2 {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.menu_2 ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.menu_2 li {
+	list-style-type: none;
+	position: relative;
+	background-image: url('ramka/menu_2.jpg');
+	width: 188px;
+	padding: 2px 5px 2px 5px;
+}
+
+
+.menu_2 li.razy_2 {
+	list-style-type: none;
+	position: relative;
+	background-image: url('ramka/menu_2_x2.jpg');
+	width: 188px;
+	padding: 1px 5px 1px 5px;
+}
+
+.menu_2 li.pasek_g {
+	list-style-type: none;
+	position: relative;
+	background-image: url('ramka/menu_gora.jpg');
+	width: 198px;
+	height: 7px;
+	padding: 0;
+
+}
+
+.menu_2 li.pasek_d {
+	list-style-type: none;
+	position: relative;
+	background-image: url('ramka/menu_dol.jpg');
+	width: 198px;
+	height: 7px;
+	padding: 0;
+	margin: 0;
+
+}
+
+.menu_2 a {
+	padding: 4px 6px;
+	display: block;
+	font-size: 11px;
+	font-family: verdana, tahoma, arial, helvetica, sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.menu_2 a:hover {
+	color: #2985b1;
+
+}
+
+.menu_2 li ul {
+	position: absolute;
+	width: 188px;
+	padding: 2px 5px 2px 5px;
+	display: none;
+	left: 198px;
+	top: 0px;
+}
+
+.menu_2 li:hover ul {
+	display: block;
+
+}
+
+
+.menu_2 li ul li {}
+
+.menu_2 a span.dopisek {
+	font-size: 9px;
+	color: #949494;
+	margin: 0;
+	padding: 0;
+}
+
+.menu_2 a:hover span.dopisek {
+	color: #2985b1;
+}
+
+
+/*END menu boczne*/
+
+/*  WYKŁADY  */
+
+.menu_w {}
+
+.menu_w li {
+	list-style-type: none;
+}
+
+.menu_w li a,
+.menu_w li a:visited {
+	text-decoration: none;
+	display: block;
+	border: 1px solid #ffffff;
+	position: relative;
+
+}
+
+
+
+.menu_w li a:hover {
+	border: 1px solid #900d12;
+
+
+}
+
+.menu_w img {
+	height: 25px;
+	border: 0;
+}
+
+
+.menu_w li a div {
+	position: absolute;
+	width: 600px;
+	height: 37px;
+	border: 1px solid #900d12;
+	top: 0;
+	left: -100px;
+	z-index: 1;
+	display: none;
+}
+
+.menu_w li a:hover div {
+	display: none;
+
+
+}
+
+.fl {
+	font-size: 1.5em;
+}
+
+
+
+li.menu_w_p a,
+li.menu_w_p a:visited {
+	text-decoration: none;
+	display: block;
+	border: 1px solid #ffffff;
+	position: relative;
+	color: #808080;
+}
+
+/* END WYKłADY */
+
+
+/*opis księ �ki*/
+
+#okladka_ab {
+	position: relative;
+}
+
+#okladka_ab div {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #900d12;
+	text-align: justify;
+	padding: 5px 15px;
+	width: 500px;
+	top: 30px;
+	left: 190px;
+	display: none;
+	z-index: 2;
+}
+
+#okladka_ab:hover div {
+	display: block;
+}
+
+
+/*END opis dyplomu*/
+
+
+#okladka_dypl {
+	position: relative;
+}
+
+#okladka_dypl div {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #900d12;
+	width: 500px;
+	top: -250px;
+	left: 190px;
+	display: none;
+	z-index: 2;
+}
+
+#okladka_dypl:hover div {
+	display: block;
+}
+
+img.dypl {
+	margin-bottom: 5px;
+	border-right: 2px solid #c0c0c0;
+	border-bottom: 2px solid #c0c0c0;
+}
+
+/*END opis dyplomu*/
+
+/*opis Artykułu*/
+
+.okl_art {
+	position: relative;
+	float: left;
+	margin: 0 0 10px 12px;
+	border-right: 2px solid #c0c0c0;
+	border-bottom: 2px solid #c0c0c0;
+}
+
+.okl_art div {
+	position: absolute;
+	background: #fff;
+	border: 1px solid #900d12;
+	text-align: justify;
+	padding: 5px 15px;
+	width: 350px;
+	top: 30px;
+	left: 50px;
+	z-index: 1;
+	display: none;
+}
+
+.okl_art td {
+	border: 1px solid #2985b1;
+	color: #2985b1;
+	font-size: 11px;
+}
+
+.okl_art td a {
+	display: block;
+	text-decoration: none;
+}
+
+.okl_art:hover div {
+	display: block;
+}
+
+#okladka_ab img {
+	border-right: 2px solid #c0c0c0;
+	border-bottom: 2px solid #c0c0c0;
+}
+
+
+
+/* END opis Artykułu*/
+
+
+
+
+
+
+
+.z_linia {
+	border-left: 1px solid #2985b1;
+	padding-left: 10px;
+	margin-right: 15px;
+}
+
+
+.z_linia:hover {
+	border-left: 1px solid #933000;
+}
+
+.dopisek {
+	margin-left: 30px;
+	color: #3f3f3f
+}
+
+.data {
+	font-style: italic;
+	color: #b68d03;
+
+}
+
+#dol a,
+#dol a:visited {
+	color: #2985b1;
+}
+
+#dol a:hover {
+	color: #900d12;
+}
+
+#dol div {
+	margin: -15px 30px 0 620px;
+	font-size: 11px;
+}
+
+#stopka span {
+	margin-left: 20px;
+	font-weight: bold;
+}
+
+
+
+a.art {
+	color: #2985b1;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+a.art:hover {
+	color: #2985b1;
+	text-decoration: none;
+}
+
+#li_dorobek li {
+	padding: 5px 25px 5px 5px;
+	margin: 0;
+}
+
+.czerwone {
+	color: #933000;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.wciecie {
+	margin-left: 25px;
+}
+
+ul.wciecie {
+	margin: 0 0 0 25px;
+}
+
+ul.wciecie li {
+	margin: 0 0 0 30px;
+}
+
+.small {
+	font-size: .8em;
+}
+
+.szare {
+	color: #a4a4a4;
+}
+
+div.ramka_sekcji {
+	border-left: 1px solid #c0c0c0;
+	border-bottom: 1px solid #c0c0c0;
+	padding: 5px 5px 0 10px;
+	margin: 10px 0 15px 0;
+}
+
+.wciecie_w_lewo {
+	margin-left: -10px;
+}
+
+.przekreslenie {
+	text-decoration: line-through;
+}
+
+
+#ramka_ie6 {
+	border: 3px solid red;
+	background-color: #f8e0e7;
+	color: #962144;
+	font-size: 14px;
+}
+
+
+#lightbox {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+
+#lightbox img {
+	width: auto;
+	height: auto;
+}
+
+#lightbox a img {
+	border: none;
+}
+
+#outerImageContainer {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+
+#imageContainer {
+	padding: 10px;
+}
+
+#loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+
+#hoverNav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+
+#imageContainer>#hoverNav {
+	left: 0;
+}
+
+#hoverNav a {
+	outline: none;
+}
+
+#prevLink,
+#nextLink {
+	width: 49%;
+	height: 100%;
+	background-image: url(data:image/gif;base64,AAAA);
+	/* Trick IE into showing hover */
+	display: block;
+}
+
+#prevLink {
+	left: 0;
+	float: left;
+}
+
+#nextLink {
+	right: 0;
+	float: right;
+}
+
+#prevLink:hover,
+#prevLink:visited:hover {
+	background: url(../images/prevlabel.gif) left 15% no-repeat;
+}
+
+#nextLink:hover,
+#nextLink:visited:hover {
+	background: url(../images/nextlabel.gif) right 15% no-repeat;
+}
+
+#imageDataContainer {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+}
+
+#imageData {
+	padding: 0 10px;
+	color: #666;
+}
+
+#imageData #imageDetails {
+	width: 70%;
+	float: left;
+	text-align: left;
+}
+
+#imageData #caption {
+	font-weight: bold;
+}
+
+#imageData #numberDisplay {
+	display: block;
+	clear: left;
+	padding-bottom: 1.0em;
+}
+
+#imageData #bottomNavClose {
+	width: 66px;
+	float: right;
+	padding-bottom: 0.7em;
+	outline: none;
+}
+
+#overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+}

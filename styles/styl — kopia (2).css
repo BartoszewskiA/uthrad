@@ -316,32 +316,31 @@ nav aside img:hover {
   filter: none;
 }
 
-.okladki {
-  display: flex;
-  flex-flow: row wrap;
-  background-color: #ff4747;
-}
+.okladki div {
 
-.okladki img {
-  width: auto;
+
+  display: none;
+  width: 100%;
+  align-items: center;
+  /* display: flex; */
+  flex-direction: row;
+}
+.okladki div img {
   transition: filter 0.3s ease;
   filter:  opacity(60%) saturate(20%);
   border-bottom: 5px solid #969696;
  
 }
-.okladki img:hover {
+.okladki div img:hover {
   filter: none;
   border-bottom: 5px solid #ff4747;
 }
 
-@media screen and (max-width: 750px) {
-  .okladki {
-    
-    display: none;
+@media screen and (min-width: 750px) {
+  .okladki div {
+    display: flex;
   }
 }
-
-
 
 @media screen and (min-width: 750px) {
   nav aside {
@@ -747,24 +746,9 @@ a {
   list-style-type: disc;
 }
 
-
 .list_n {
   padding-left: 10px;
   list-style: decimal;
-}
-
-.list_mon {
-/* monografia */
-  list-style: decimal;
-  list-style-position: outside;
-  padding-left: 1em;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
-.list_mon li {
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
 }
 
 /* ----------------- Artykuł rozwijany ------------------- */
