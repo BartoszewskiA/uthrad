@@ -1,327 +1,255 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Artur Bartoszewski">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Artur Bartoszewski" />
     <meta name="copyright" content="Artur Bartoszewski" />
     <title>Artru Bartoszewski - Materiały dla studentów</title>
-    <link rel="shortcut icon" href="images/abLogo.ico">
-    <link rel="stylesheet" href="styles/styl.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="shortcut icon" href="images/abLogo.ico" />
+    <link rel="stylesheet" href="styles/styl.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/image_transition.js"></script>
     <script type="text/javascript" src="scripts/hiden_show.js"></script>
     <!-- <script type="text/javascript" src="scripts/pointer.js"></script> -->
+  </head>
 
-
-
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <!-- ----------------- Nagłówek --------------------- -->
-        <nav class="nav_dzialy">
-            <ul class="menu_dzialy">
-
-                <li id="wyklady" class="pointer_d"><a href="#">Wykłady</a></li>
-                <li id="praktyki"><a href="praktyki.html">Praktyki</a></li>
-                <li id="aktualnosci"><a href="#">Aktualności</a></li>
-                <li id="o_mnie"><a href="old/dorobek.html">O&nbspmnie</a></li>
-
-            </ul>
-
-
-        </nav>
-        <header class="header" id="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/ablogov2.png" alt="Artur Bartoszewski">
-                </a>
-                <p>Artur Bartoszewski</p>
-
-            </div>
-            <div class="title">
-                <!-- <div class="graph" id="graph"> 
+      <!-- ----------------- Nagłówek --------------------- -->
+      <nav class="nav_dzialy">
+        <ul class="menu_dzialy">
+          <li id="wyklady" class="pointer_d"><a href="#">Wykłady</a></li>
+          <li id="praktyki"><a href="praktyki.html">Praktyki</a></li>
+          <li id="aktualnosci"><a href="#">Aktualności</a></li>
+          <li id="o_mnie"><a href="old/dorobek.html">O&nbspmnie</a></li>
+        </ul>
+      </nav>
+      <header class="header" id="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/ablogov2.png" alt="Artur Bartoszewski" />
+          </a>
+          <p>Artur Bartoszewski</p>
+        </div>
+        <div class="title">
+          <!-- <div class="graph" id="graph"> 
                     
                 </div> -->
-                <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
-                <a href="http://www.ki.uniwersytetradom.pl/" target="_blank">
-                    <p><b>Katedra Informatyki</b><br>
-                        <span class="znikajace"> Wydział: Transportu, Elektrotechniki i Informatyki,<br></span>
-                        UTH&nbspRadom</p>
-                </a>
-
-            </div>
-
-        </header>
+          <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
+          <a href="http://www.ki.uniwersytetradom.pl/" target="_blank">
+            <p>
+              <b>Katedra Informatyki</b><br />
+              <span class="znikajace">
+                Wydział: Transportu, Elektrotechniki i Informatyki,<br
+              /></span>
+              UTH&nbspRadom
+            </p>
+          </a>
+        </div>
+      </header>
+      <!-- ------------------------------------------------ -->
+      <!-- ----------------- TRESC ---------------------- -->
+      <main class="main">
+        <!-- ----Nav Content--- -->
+        <nav class="nav_przedmioty">
+          <ul class="menu_przedmioty">
+            <li class="przedmiot"><a href="index.html">Start</a></li>
+            <li class="przedmiot">
+              <a href="arch_w.html">Architektura komputerów</a>
+            </li>
+            <li class="przedmiot">
+              <a href="ppc.html">Podstawy programowania (c&nbspi&nbspc++)</a>
+            </li>
+            <li class="przedmiot">
+              <a href="pob.html">Programowanie obiektowe (c++)</a>
+            </li>
+            <li class="przedmiot">
+              <a href="am.html">Programowanie aplikacji mobilnych (Java)</a>
+            </li>
+            <li class="przedmiot pointer">
+              <a href="#">Wizualne systemy programowania (c#&nbspi&nbsp.NET)</a>
+            </li>
+            <li class="przedmiot"><a href="#">Archiwum przedmiotów</a></li>
+          </ul>
+          <!-- <hr class="line"> -->
+          <aside>
+            <a href="https://github.com/BartoszewskiA"
+              ><img src="images/Git-logo.png" target="_blank" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=h-idPK-NpYU"
+              ><img src="images/YouTube2.png" target="_blank" />
+            </a>
+          </aside>
+          <div id="button_hide">&nbsp&nbsp</div>
+        </nav>
         <!-- ------------------------------------------------ -->
-        <!-- ----------------- TRESC ---------------------- -->
-        <main class="main">
-            <!-- ----Nav Content--- -->
-            <nav class="nav_przedmioty">
-                <ul class="menu_przedmioty">
-                    <li class="przedmiot"><a href="index.html">Start</a></li>
-                    <li class="przedmiot"><a href="arch_w.html">Architektura komputerów</a></li>
-                    <li class="przedmiot"><a href="ppc.html">Podstawy programowania (c&nbspi&nbspc++)</a></li>
-                    <li class="przedmiot"><a href="pob.html">Programowanie obiektowe (c++)</a></li>
-                    <li class="przedmiot"><a href="am.html">Programowanie aplikacji mobilnych (Java)</a></li>
-                    <li class="przedmiot pointer"><a href="#">Wizualne systemy programowania (c#&nbspi&nbsp.NET)</a>
-                    </li>
-                    <li class="przedmiot"><a href="#">Archiwum przedmiotów</a></li>
-                </ul>
-                <!-- <hr class="line"> -->
-                <aside>
-                    <a href="https://github.com/BartoszewskiA"><img src="images/Git-logo.png" target="_blank"> </a>
-                    <a href="https://www.youtube.com/watch?v=h-idPK-NpYU"><img src="images/YouTube2.png"
-                            target="_blank"> </a>
-                </aside>
-                <div id="button_hide">&nbsp&nbsp</div>
-            </nav>
-            <!-- ------------------------------------------------ -->
-            <!-- -END Nav Content-- -->
-            <div class="content">
-                <section class="section_art column_1">
+        <!-- -END Nav Content-- -->
+        <div class="content">
+          <section class="section_art column_1">
+            <!-- ----Artykuł--- -->
+            <article class="article">
+              <h2>Wykłady</h2>
 
-                    <!-- ----Artykuł--- -->
-                    <article class="article">
-                        <h2>Wykłady</h2>
+              <!-- ---menu wyładów--- -->
+              <table class="menu_wyklady">
+                <!-- wiersz2 -- dopisac klase -->
+                <caption>
+                  <h3>Wizualne systemy programowania (C# i .NET)</h3>
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">Nr.</th>
+                    <th scope="col">Tytuł</th>
+                    <th scope="col">Do pobrania</th>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 1:</th>
+                    <td class="kolumna_2">
+                      Składnia języka C# - Szybki przegląd
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania_w01_2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 2:</th>
+                    <td class="kolumna_2">
+                      Windows Forms - podstawowe kontrolki
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania_w02_2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 3:</th>
+                    <td class="kolumna_2">
+                      Zdarzenia myszy i klawitury. Zdarzenia cyklu życia
+                      aplikacji
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania_w03_2021 Zdarzenia myszy i klawiatury, cykl zycia aplikacji.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 4 cz. 1:</th>
+                    <td class="kolumna_2">
+                      Windows Forms - inne przydatne kontrolki. Przykłady:
+                      przelicznik walut i tester kolorów
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania_w04_cz1 2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 4 cz. 2:</th>
+                    <td class="kolumna_2">Timer</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania_w04_cz2 2021_timer.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 5</th>
+                    <td class="kolumna_2">
+                      WPF - tworzenie layoutu aplikacji za pomocą XAML
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania_w05_2021_WPF_i_XAML.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 6</th>
+                    <td class="kolumna_2">
+                      Panel Grid, Kolory i pędzle, przykład "Próbnik kolorów w WPF"
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania_w06_2021_Grid_Przyklad_probnik_kolorow.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
 
-                        <!-- ---menu wyładów--- -->
-                        <table class="menu_wyklady">
-                            <!-- wiersz2 -- dopisac klase -->
-                            <caption>
-                                <h3>Wizualne systemy programowania (C# i .NET)</h3>
-                            </caption>
-                            <tbody>
-                                <tr>
-                                    <th scope="col">Nr.</th>
-                                    <th scope="col">Tytuł</th>
-                                    <th scope="col">Do pobrania</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 1:</th>
-                                    <td class="kolumna_2"> Składnia języka C# cz. 1
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w01 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 2:</th>
-                                    <td class="kolumna_2">Składnia języka C# cz. 2 - kolekcje
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w02 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 3:</th>
-                                    <td class="kolumna_2">Programowanie z wykorzystaniem API Windows; podstawowe
-                                        kontrolki
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w03 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
+                    <td class="kolumna_2">Kierunek: Informatyka</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2021-Wizualne-Systemy-Programowania-INF-Wyklad.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
+                    <td class="kolumna_2">Kierunek: Informatyka Techniczna</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2021-Wizualne-Systemy-Programowania-Inf-Techniczna-Wyklad.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Uwaga!</th>
+                    <td>
+                      Prezentacje mogą być zmieniane po wykładach. Kolejność
+                      omawianych zagadnień może ulec zmianie.<br />
+                      <b>Przypominam</b> - przeglądanie prezentacji nie zastąpi
+                      udziału w wykładzie!
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </article>
+            <!-- -END -Artykuł- -->
 
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 4:</th>
-                                    <td class="kolumna_2">Programowanie z wykorzystaniem API Windows; podstawowe
-                                        kontrolki c.d.
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w04 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 5:</th>
-                                    <td class="kolumna_2"> Okna dialogowe
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w05 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 6:</th>
-                                    <td class="kolumna_2"> Timer
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w06 2020 - timer.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 7:</th>
-                                    <td class="kolumna_2"> Pliki tekstowe
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w07 2020 - pliki tekstowe.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 8:</th>
-                                    <td class="kolumna_2"> Pliki tekstowe cd.  Przykład "Notatnik"
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w08 2020 - przyklad notatnik.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 9:</th>
-                                    <td class="kolumna_2">Zdarzenia myszy i klawiatury. Zdarzenia cyklu życia aplikacji.
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w09 2020 -  Zdarzenia myszy i klawiatury, cykl zycia aplikacji.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 10:</th>
-                                    <td class="kolumna_2">Programy składjące się z wielu okien. Okna modalne (dialogowe) i niemodalne (pracujące równolegle z oknem głównym).
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w10 2020 - wiele okien.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 11:</th>
-                                    <td class="kolumna_2">Wątki - wstęp do programowania współbieżnego.
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w11 2020 watki - programowanie wspolbiezne.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 12:</th>
-                                    <td class="kolumna_2">Grafika, Klasa Canvas.
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w12 2020 - Grafika, Klasa Canvas.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-
-
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
-                                    <td class="kolumna_2">
-                                        Programy tworzone w trakcie wykładów znajdują się na publicznym repozytorium
-                                        GitHub
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://github.com/BartoszewskiA/WSP_ST_wyklad.git"
-                                            title="Repozytorium do pobrania" target="_blank"><img src="images/git_l.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Uwaga!</th>
-                                    <td>Prezentacje mogą być zmieniane po wykładach. Kolejność omawianych zagadnień może
-                                        ulec zmianie.<br>
-                                        <b>Przypominam</b> - przeglądanie prezentacji nie zastąpi udziału w wykładzie!
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </article>
-                    <!-- -END -Artykuł- -->
-
-
-
-                    <!-- ----Artykuł--- -->
-                    <article class="article">
-                        <!-- ---menu wyładów--- -->
-                        <h2>Laboratoria</h2>
-                        <table class="menu_wyklady">
-                            <caption>
-                                <!-- <h3>Instrukcje do laboratoriów oraz wykonane w ich trakcie programy</h3> -->
-                            </caption>
-                            <tbody>
-                                <tr>
-                                    <th scope="col">Grupa</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Do pobrania</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">L1:</th>
-                                    <td class="kolumna_2">
-                                        Programy tworzone w trakcie Laboratoriów
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://github.com/BartoszewskiA/WSP_ST_L1.git" title="Repozytorium do pobrania" target="_blank"><img
-                                                src="images/git_l.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">L2:</th>
-                                    <td class="kolumna_2">
-                                        Programy tworzone w trakcie Laboratoriów
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://github.com/BartoszewskiA/WSP_ST_L2.git" title="Repozytorium do pobrania" target="_blank"><img
-                                                src="images/git_l.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">L3:</th>
-                                    <td class="kolumna_2">
-                                        Programy tworzone w trakcie Laboratoriów
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://github.com/BartoszewskiA/WSP_ST_L3.git" title="Repozytorium do pobrania" target="_blank"><img
-                                                src="images/git_l.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- <th scope="row" class="kolumna_1">Lab. 3:</th>
-                                                    <td class="kolumna_2">
-                                                        <h4>tytuł </h4>
-                                                        <p class="small">
-                                                           Opis
-                                                        </p>
-                
-                                                    </td>
-                                                    <td class="kolumna_3"><a href="#" target="_blank"><img src="images/pdf.png"
-                                                                alt="Plik do pobrania"></a>
-                                                        <a href="#"
-                                                            title="Repozytorium do pobrania" target="_blank"><img src="images/git_l.png"
-                                                                alt="Plik do pobrania"></a>
-                                                    </td> -->
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Informacje:</th>
-                                    <td>Obecność na laboratoriach jest obowiązkowa. <br>Materiały bedą pojawiać się w
-                                        trakcie semestru.</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-
-                    </article>
-                    <!-- -END -Artykuł- -->
-
-                    <!-- ----Artykuł--- -->
-                    <article class="article">
+            <!-- ----Artykuł--- -->
+            <!-- <article class="article">
                         <h2>Wykłady NIESTACJONARNE</h2>
 
-                        <!-- ---menu wyładów--- -->
+                         ---menu wyładów--- 
                         <table class="menu_wyklady">
-                            <!-- wiersz2 -- dopisac klase -->
+                             wiersz2 -- dopisac klase 
                             <caption>
                                 <h3>Wizualne systemy programowania (C# i .NET)</h3>
                             </caption>
@@ -394,18 +322,16 @@
                                 </tr>
                             </tfoot>
                         </table>
-                    </article>
-                    <!-- -END -Artykuł- -->
+                    </article> -->
+            <!-- -END -Artykuł- -->
 
-
-
-                    <!-- ----Artykuł--- -->
-                    <article class="article">
-                        <!-- ---menu wyładów--- -->
+            <!-- ----Artykuł--- -->
+            <!-- <article class="article">
+                         ---menu wyładów--- 
                         <h2>Laboratoria NIESTACJONARNE</h2>
                         <table class="menu_wyklady">
                             <caption>
-                                <!-- <h3></h3> -->
+                               
                             </caption>
                             <tbody>
                                 <tr>
@@ -428,20 +354,7 @@
                                 <tr>
                             
                                 <tr>
-                                    <!-- <th scope="row" class="kolumna_1">Lab. 3:</th>
-                                                    <td class="kolumna_2">
-                                                        <h4>tytuł </h4>
-                                                        <p class="small">
-                                                           Opis
-                                                        </p>
-                
-                                                    </td>
-                                                    <td class="kolumna_3"><a href="#" target="_blank"><img src="images/pdf.png"
-                                                                alt="Plik do pobrania"></a>
-                                                        <a href="#"
-                                                            title="Repozytorium do pobrania" target="_blank"><img src="images/git_l.png"
-                                                                alt="Plik do pobrania"></a>
-                                                    </td> -->
+                    
                                 </tr>
                             </tbody>
                             <tfoot>
@@ -453,202 +366,391 @@
                             </tfoot>
                         </table>
 
-                    </article>
-                    <!-- -END -Artykuł- -->
+                    </article> -->
+            <!-- -END -Artykuł- -->
 
+            <!-- ----Artykuł--- -->
+            <article class="article">
+              <!-- ---menu wyładów--- -->
+              <h2>Laboratoria</h2>
+              <table class="menu_wyklady">
+                <caption>
+                  <!-- <h3>Instrukcje do laboratoriów oraz wykonane w ich trakcie programy</h3> -->
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">Grupa</th>
+                    <th scope="col"></th>
+                    <th scope="col">Do pobrania</th>
+                  </tr>
 
+                  <tr>
+                    <th scope="row" class="kolumna_1">Inf. Techniczna L1:</th>
+                    <td class="kolumna_2">
+                      Programy tworzone w trakcie Laboratoriów
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2021-Wizualne-Systemy-Programowania-Inf-Techniczna-LAB.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Informacje:</th>
+                    <td>
+                      Obecność na laboratoriach jest obowiązkowa.
+                      <br />Materiały bedą pojawiać się w trakcie semestru.
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </article>
+            <!-- -END -Artykuł- -->
+          </section>
+          <!-- -------------------------------------------------podział kolumn----------------------------------------------- -->
+          <section class="section_art column_2">
+            <!-- ----Artykuł--- -->
+            <article class="article read_more">
+              <h2>Literatura</h2>
+              <div class="picture_wrapper">
+                <img
+                  src="images/okladki/okl35.jpg"
+                  alt="C#. Rusz głową! Wydanie III -
+                            J. Greene, A, Stellman"
+                  title="C#. Rusz głową! Wydanie III -
+                            J. Greene, A, Stellman"
+                />
+                <img
+                  src="images/okladki/okl32.jpg"
+                  alt="Visual Studio 2013. Podręcznik programowania w C# z zadaniami 
+                            J. Matulewski"
+                  title="Visual Studio 2013. Podręcznik programowania w C# z zadaniami 
+                            J. Matulewski"
+                />
+                <img
+                  src="images/okladki/okl33.jpg"
+                  alt="Microsoft Visual Studio 2012 - D. Farbanieci"
+                  title="Microsoft Visual Studio 2012 - D. Farbanieci"
+                />
+                <img
+                  src="images/okladki/okl34.jpg"
+                  alt="Visual Studio 2017. Tworzenie aplikacji Windows w języku C# -
+                            J. Matulewski"
+                  title="Visual Studio 2017. Tworzenie aplikacji Windows w języku C# -
+                            J. Matulewski"
+                />
+                <img
+                  src="images/okladki/okl31.jpg"
+                  alt="C# i .NET -
+                            Stephen C. Perry"
+                  title="C# i .NET -
+                            Stephen C. Perry"
+                />
+              </div>
+              <div class="description_wrapper">
+                <p>C#. Rusz głową! Wydanie III - J. Greene, A, Stellman</p>
+                <p>
+                  Visual Studio 2013. Podręcznik programowania w C# z zadaniami
+                  J. Matulewski
+                </p>
+                <p>Microsoft Visual Studio 2012 - D. Farbanieci</p>
+                <p>
+                  Visual Studio 2017. Tworzenie aplikacji Windows w języku C# -
+                  J. Matulewski
+                </p>
+                <p>C# i .NET - Stephen C. Perry</p>
+              </div>
+            </article>
+            <!-- -END -Artykuł- -->
 
+            <!-- ----Artykuł--- -->
+            <article class="article">
+              <h2>Wykłady archiwalne (2020)</h2>
 
-                </section>
-                <!-- -------------------------------------------------podział kolumn----------------------------------------------- -->
-                <section class="section_art column_2">
+              <!-- ---menu wyładów--- -->
+              <table class="menu_wyklady">
+                <!-- wiersz2 -- dopisac klase -->
+                <caption>
+                  <h3>Wizualne systemy programowania (C# i .NET)</h3>
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">Nr.</th>
+                    <th scope="col">Tytuł</th>
+                    <th scope="col">Do pobrania</th>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 1:</th>
+                    <td class="kolumna_2">Składnia języka C# cz. 1</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w01 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 2:</th>
+                    <td class="kolumna_2">
+                      Składnia języka C# cz. 2 - kolekcje
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w02 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 3:</th>
+                    <td class="kolumna_2">
+                      Programowanie z wykorzystaniem API Windows; podstawowe
+                      kontrolki
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w03 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
 
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 4:</th>
+                    <td class="kolumna_2">
+                      Programowanie z wykorzystaniem API Windows; podstawowe
+                      kontrolki c.d.
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w04 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
 
-                    <!-- ----Artykuł--- -->
-                    <article class="article read_more">
-                        <h2>Literatura</h2>
-                        <div class="picture_wrapper">
-                            <img src="images/okladki/okl35.jpg" alt="C#. Rusz głową! Wydanie III -
-                            J. Greene, A, Stellman" title="C#. Rusz głową! Wydanie III -
-                            J. Greene, A, Stellman">
-                            <img src="images/okladki/okl32.jpg" alt="Visual Studio 2013. Podręcznik programowania w C# z zadaniami 
-                            J. Matulewski" title="Visual Studio 2013. Podręcznik programowania w C# z zadaniami 
-                            J. Matulewski">
-                            <img src="images/okladki/okl33.jpg" alt="Microsoft Visual Studio 2012 - D. Farbanieci"
-                                title="Microsoft Visual Studio 2012 - D. Farbanieci">
-                            <img src="images/okladki/okl34.jpg" alt="Visual Studio 2017. Tworzenie aplikacji Windows w języku C# -
-                            J. Matulewski" title="Visual Studio 2017. Tworzenie aplikacji Windows w języku C# -
-                            J. Matulewski">
-                            <img src="images/okladki/okl31.jpg" alt="C# i .NET -
-                            Stephen C. Perry" title="C# i .NET -
-                            Stephen C. Perry">
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 5:</th>
+                    <td class="kolumna_2">Okna dialogowe</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w05 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 6:</th>
+                    <td class="kolumna_2">Timer</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w06 2020 - timer.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
 
-                        </div>
-                        <div class="description_wrapper">
-                            <p>C#. Rusz głową! Wydanie III - J. Greene, A, Stellman</p>
-                            <p>Visual Studio 2013. Podręcznik programowania w C# z zadaniami J. Matulewski</p>
-                            <p>Microsoft Visual Studio 2012 - D. Farbanieci</p>
-                            <p>Visual Studio 2017. Tworzenie aplikacji Windows w języku C# - J. Matulewski</p>
-                            <p>C# i .NET - Stephen C. Perry</p>
-                        </div>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 7:</th>
+                    <td class="kolumna_2">Pliki tekstowe</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w07 2020 - pliki tekstowe.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 8:</th>
+                    <td class="kolumna_2">
+                      Pliki tekstowe cd. Przykład "Notatnik"
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w08 2020 - przyklad notatnik.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 9:</th>
+                    <td class="kolumna_2">
+                      Zdarzenia myszy i klawiatury. Zdarzenia cyklu życia
+                      aplikacji.
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w09 2020 -  Zdarzenia myszy i klawiatury, cykl zycia aplikacji.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 10:</th>
+                    <td class="kolumna_2">
+                      Programy składjące się z wielu okien. Okna modalne
+                      (dialogowe) i niemodalne (pracujące równolegle z oknem
+                      głównym).
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w10 2020 - wiele okien.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
 
-                    </article>
-                    <!-- -END -Artykuł- -->
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 11:</th>
+                    <td class="kolumna_2">
+                      Wątki - wstęp do programowania współbieżnego.
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w11 2020 watki - programowanie wspolbiezne.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
 
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 12:</th>
+                    <td class="kolumna_2">Grafika, Klasa Canvas.</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="wsp/wizualne_systemy_programowania w12 2020 - Grafika, Klasa Canvas.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
 
+                  <tr>
+                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
+                    <td class="kolumna_2">
+                      Programy tworzone w trakcie wykładów znajdują się na
+                      publicznym repozytorium GitHub
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/WSP_ST_wyklad.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Uwaga!</th>
+                    <td>
+                      Prezentacje mogą być zmieniane po wykładach. Kolejność
+                      omawianych zagadnień może ulec zmianie.<br />
+                      <b>Przypominam</b> - przeglądanie prezentacji nie zastąpi
+                      udziału w wykładzie!
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </article>
+            <!-- -END -Artykuł- -->
 
-                    <!-- ----Artykuł--- -->
-                    <article class="article">
-                        <h2>Wykłady archiwalne (2019)</h2>
-
-                        <!-- ---menu wyładów--- -->
-                        <table class="menu_wyklady">
-                            <!-- wiersz2 -- dopisac klase -->
-                            <caption>
-                                <h3>Wizualne systemy programowania (C# i .NET)</h3>
-                            </caption>
-                            <tbody>
-                                <tr>
-                                    <th scope="col">Nr.</th>
-                                    <th scope="col">Tytuł</th>
-                                    <th scope="col">Do pobrania</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 1:</th>
-                                    <td class="kolumna_2">Pokaz programowania wizualnego dla systemu Windows</td>
-                                    <td class="kolumna_3">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 2:</th>
-                                    <td class="kolumna_2"> Składnia języka C# cz. 1
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w02.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 3:</th>
-                                    <td class="kolumna_2">Składnia języka C# cz. 2
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w03.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 4:</th>
-                                    <td class="kolumna_2">Programowanie wizualne - Windows Forms</td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w04.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 5:</th>
-                                    <td class="kolumna_2">Podstawowe kontrolki</td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w05.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 6:</th>
-                                    <td class="kolumna_2">Wykorzystanie zewnętrznych klas
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <!-- <a href="#"
-                                                                target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a> -->
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 7:</th>
-                                    <td class="kolumna_2">Okna dialogowe
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w07.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 8:</th>
-                                    <td class="kolumna_2">Tworzenie kontrolek w kodzie c#
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="#" target="_blank"><img src="images/pdf.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 9:</th>
-                                    <td class="kolumna_2">Kolekcje, Pliki tekstowe,
-                                    </td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w09.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 10:</th>
-                                    <td class="kolumna_2">Przykład: Notatnik</td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w10.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 11:</th>
-                                    <td class="kolumna_2">Programowanie wspłbieżne (wątki); Timer</td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w11 (watki timer).pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 12:</th>
-                                    <td class="kolumna_2">Wiele okien programu; Okna modalne i niemodalne</td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w12 (wiele okien).pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 13:</th>
-                                    <td class="kolumna_2">Zdarzenia</td>
-                                    <td class="kolumna_3"><a
-                                            href="wsp/wizualne_systemy_programowania w13 (zdarzenia).pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 14:</th>
-                                    <td class="kolumna_2">Grafika: GDI+, obiekt canvas</td>
-                                    <td class="kolumna_3"><a href="wsp/wizualne_systemy_programowania w14 (grafika).pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Uwaga!</th>
-                                    <td>Prezentacje mogą być zmieniane po wykładach. Kolejność omawianych zagadnień może
-                                        ulec zmianie.<br>
-                                        <b>Przypominam</b> - przeglądanie prezentacji nie zastąpi udziału w wykładzie!
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </article>
-                    <!-- -END -Artykuł- -->
-
-
-
-
-                </section>
-            </div>
-        </main>
-        <!-- ------------------------------------------------ -->
-        <!-- ------------------ Stopka ---------------------- -->
-        <footer class="footer">
-            <p>&copy; Artur Bartoszewski</p>
-        </footer>
-        <!-- ------------------------------------------------ -->
+            <!-- ----Artykuł--- -->
+            <article class="article">
+              <!-- ---menu wyładów--- -->
+              <h2>Laboratoria archiwalne (2020)</h2>
+              <table class="menu_wyklady">
+                <caption>
+                  <!-- <h3>Instrukcje do laboratoriów oraz wykonane w ich trakcie programy</h3> -->
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">Grupa</th>
+                    <th scope="col"></th>
+                    <th scope="col">Do pobrania</th>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Informatyk L1:</th>
+                    <td class="kolumna_2">
+                      Programy tworzone w trakcie Laboratoriów
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/WSP_ST_L1.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr></tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Informatka L2:</th>
+                    <td class="kolumna_2">
+                      Programy tworzone w trakcie Laboratoriów
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/WSP_ST_L2.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Inf. Techniczna L1:</th>
+                    <td class="kolumna_2">
+                      Programy tworzone w trakcie Laboratoriów
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/WSP_ST_L3.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Informacje:</th>
+                    <td>
+                      Obecność na laboratoriach jest obowiązkowa.
+                      <br />Materiały bedą pojawiać się w trakcie semestru.
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </article>
+            <!-- -END -Artykuł- -->
+          </section>
+        </div>
+      </main>
+      <!-- ------------------------------------------------ -->
+      <!-- ------------------ Stopka ---------------------- -->
+      <footer class="footer">
+        <p>&copy; Artur Bartoszewski</p>
+      </footer>
+      <!-- ------------------------------------------------ -->
     </div>
-</body>
-
+  </body>
 </html>
