@@ -1,396 +1,523 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Artur Bartoszewski">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Artur Bartoszewski" />
     <meta name="copyright" content="Artur Bartoszewski" />
     <title>Artru Bartoszewski - Materiały dla studentów</title>
-    <link rel="shortcut icon" href="images/abLogo.ico">
-    <link rel="stylesheet" href="styles/styl.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="shortcut icon" href="images/abLogo.ico" />
+    <link rel="stylesheet" href="styles/styl.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/image_transition.js"></script>
     <script type="text/javascript" src="scripts/hiden_show.js"></script>
     <!-- <script type="text/javascript" src="scripts/pointer.js"></script> -->
+  </head>
 
-
-
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <!-- ----------------- Nagłówek --------------------- -->
-        <nav class="nav_dzialy">
-            <ul class="menu_dzialy">
-
-                <li id="wyklady" class="pointer_d"><a href="#">Wykłady</a></li>
-                <li id="praktyki"><a href="praktyki.html">Praktyki</a></li>
-                <li id="aktualnosci"><a href="#">Aktualności</a></li>
-                <li id="o_mnie"><a href="old/dorobek.html">O&nbspmnie</a></li>
-
-            </ul>
-
-
-        </nav>
-        <header class="header" id="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/ablogov2.png" alt="Artur Bartoszewski">
-                </a>
-                <p>Artur Bartoszewski</p>
-
-            </div>
-            <div class="title">
-                <!-- <div class="graph" id="graph"> 
+      <!-- ----------------- Nagłówek --------------------- -->
+      <nav class="nav_dzialy">
+        <ul class="menu_dzialy">
+          <li id="wyklady" class="pointer_d"><a href="#">Wykłady</a></li>
+          <li id="praktyki"><a href="praktyki.html">Praktyki</a></li>
+          <li id="aktualnosci"><a href="#">Aktualności</a></li>
+          <li id="o_mnie"><a href="old/dorobek.html">O&nbspmnie</a></li>
+        </ul>
+      </nav>
+      <header class="header" id="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/ablogov2.png" alt="Artur Bartoszewski" />
+          </a>
+          <p>Artur Bartoszewski</p>
+        </div>
+        <div class="title">
+          <!-- <div class="graph" id="graph"> 
                     
                 </div> -->
-                <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
-                <a href="http://www.ki.uniwersytetradom.pl/" target="_blank">
-                    <p><b>Katedra Informatyki</b><br>
-                        <span class="znikajace"> Wydział: Transportu, Elektrotechniki i Informatyki,<br></span>
-                        UTH&nbspRadom
-                    </p>
-                </a>
-
-            </div>
-
-        </header>
+          <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
+          <a href="http://www.ki.uniwersytetradom.pl/" target="_blank">
+            <p>
+              <b>Katedra Informatyki</b><br />
+              <span class="znikajace">
+                Wydział: Transportu, Elektrotechniki i Informatyki,<br
+              /></span>
+              UTH&nbspRadom
+            </p>
+          </a>
+        </div>
+      </header>
+      <!-- ------------------------------------------------ -->
+      <!-- ----------------- TRESC ---------------------- -->
+      <main class="main">
+        <!-- ----Nav Content--- -->
+        <nav class="nav_przedmioty">
+          <ul class="menu_przedmioty">
+            <li class="przedmiot"><a href="index.html">Start</a></li>
+            <li class="przedmiot">
+              <a href="arch_w.html">Architektura komputerów</a>
+            </li>
+            <li class="przedmiot">
+              <a href="ppc.html">Podstawy programowania (c&nbspi&nbspc++)</a>
+            </li>
+            <li class="przedmiot pointer">
+              <a href="#">Programowanie obiektowe (c++)</a>
+            </li>
+            <li class="przedmiot">
+              <a href="am.html">Programowanie aplikacji mobilnych (Java)</a>
+            </li>
+            <li class="przedmiot">
+              <a href="wsp.html"
+                >Wizualne systemy programowania (c#&nbspi&nbsp.NET)</a
+              ></li>
+              <li class="przedmiot"><a href="aplikacje_beckendowe.html">Aplikacje backendowe (PHP i SQL)</a></li>
+            
+            <li class="przedmiot"><a href="#">Archiwum przedmiotów</a></li>
+          </ul>
+          <!-- <hr class="line"> -->
+          <aside>
+            <a href="https://github.com/BartoszewskiA"
+              ><img src="images/Git-logo.png" target="_blank" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=h-idPK-NpYU"
+              ><img src="images/YouTube2.png" target="_blank" />
+            </a>
+          </aside>
+          <div id="button_hide">&nbsp&nbsp</div>
+        </nav>
         <!-- ------------------------------------------------ -->
-        <!-- ----------------- TRESC ---------------------- -->
-        <main class="main">
-            <!-- ----Nav Content--- -->
-            <nav class="nav_przedmioty">
-                <ul class="menu_przedmioty">
-                    <li class="przedmiot"><a href="index.html">Start</a></li>
-                    <li class="przedmiot"><a href="arch_w.html">Architektura komputerów</a></li>
-                    <li class="przedmiot"><a href="ppc.html">Podstawy programowania (c&nbspi&nbspc++)</a></li>
-                    <li class="przedmiot pointer"><a href="#">Programowanie obiektowe (c++)</a></li>
-                    <li class="przedmiot"><a href="am.html">Programowanie aplikacji mobilnych (Java)</a></li>
-                    <li class="przedmiot"><a href="wsp.html">Wizualne systemy programowania (c#&nbspi&nbsp.NET)</a></li>
-                    <li class="przedmiot"><a href="#">Archiwum przedmiotów</a></li>
-                </ul>
-                <!-- <hr class="line"> -->
-                <aside>
-                    <a href="https://github.com/BartoszewskiA"><img src="images/Git-logo.png" target="_blank"> </a>
-                    <a href="https://www.youtube.com/watch?v=h-idPK-NpYU"><img src="images/YouTube2.png"
-                            target="_blank"> </a>
-                </aside>
-                <div id="button_hide">&nbsp&nbsp</div>
-            </nav>
-            <!-- ------------------------------------------------ -->
-            <!-- -END Nav Content-- -->
-            <div class="content">
-                <section class="section_art column_1">
-                    <!-- ----Artykuł--- -->
-                    <article class="article">
-                        <h2>Wykłady</h2>
+        <!-- -END Nav Content-- -->
+        <div class="content">
+          <section class="section_art column_1">
+            <!-- ----Artykuł--- -->
+            <article class="article">
+              <h2>Wykłady</h2>
 
-                        <!-- ---menu wyładów--- -->
-                        <table class="menu_wyklady wiersz2">
-                            <!-- wiersz2 -- dopisac klase -->
-                            <caption>
-                                <h3>Programowanie obiektowe (C++)</h3>
-                            </caption>
-                            <tbody>
-                                <tr>
-                                    <th scope="col">Nr.</th>
-                                    <th scope="col">Tytuł</th>
-                                    <th scope="col">Do pobrania</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 1:</th>
-                                    <td class="kolumna_2">Wskaźniki i zmienne dynamiczne
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w01 Wskazniki i zmienne dynamiczne 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 2:</th>
-                                    <td class="kolumna_2">Dynamiczne alokowanie struktur (struct)</td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w02 Struktury dynamiczne 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 3:</th>
-                                    <td class="kolumna_2">Klasy (cz. 1) składniki klas; Dostęp; Enkapsulacja
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w03 klasy cz 1 2021.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 4:</th>
-                                    <td class="kolumna_2">Klasy (cz. 2) konstruktor i destruktor; Wskaźnik this</td>
-                                    <td class="kolumna_3">
-                                        <a href="prog_obiektowe/programowanie_obiektowe_w04 klasy cz 2 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                        <a href="https://youtu.be/D2r57vBSPEI" target="_blank"><img src="images/yt.png"
-                                                alt="Plik do pobrania"></a>
+              <!-- ---menu wyładów--- -->
+              <table class="menu_wyklady wiersz2">
+                <!-- wiersz2 -- dopisac klase -->
+                <caption>
+                  <h3>Programowanie obiektowe (C++)</h3>
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">Nr.</th>
+                    <th scope="col">Tytuł</th>
+                    <th scope="col">Do pobrania</th>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 1:</th>
+                    <td class="kolumna_2">
+                      Powtórzenie: wskaźniki, dynamiczne zmienne i struktury
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w01 Powtorzenie - zmienne i  struktury dynamiczne 2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 2:</th>
+                    <td class="kolumna_2">
+                      Klasy (cz. 1): Składniki klas; Dostęp do składników;
+                      Enkapsulacja
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w02 klasy cz 1 2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 3:</th>
+                    <td class="kolumna_2">
+                      Klasy (cz. 2): Konstruktor i destruktor; Wskaźnik this
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w03 klasy cz 2 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                      <a href="https://youtu.be/D2r57vBSPEI" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 4:</th>
+                    <td class="kolumna_2">
+                      Klasy (cz. 3): Konstruktor c.d.; Przeciążanie metod
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w04 klasy cz 3 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                      <a href="https://youtu.be/R7Yxs3A7tXk" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 5:</th>
+                    <td class="kolumna_2">
+                      Klasy (cz. 4): Przekazywanie obiektów do funkcji
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w05 Przekazywanie obiektow do funkcji 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                      <a href="https://youtu.be/IrbFD5w2PIQ" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 6:</th>
+                    <td class="kolumna_2">Składniki statyczne klas</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w06 Pola statyczne klas 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                      <a href="https://youtu.be/5aMfPYgXqoM" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 7:</th>
+                    <td class="kolumna_2">Dziedziczenie</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w07 dziedziczenie 2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 8:</th>
+                    <td class="kolumna_2">Funkcje zaprzyjaźnione</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w08 Funkcje zaprzyjaznione 2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                      <a href="https://youtu.be/KLWo53p5hFs" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 9:</th>
+                    <td class="kolumna_2">
+                      Konstruktor kopiujący; Płytkie i głębokie kopiowanie
+                      obiektów
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w09 Konstruktor kopiujacy 2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 10 - 11:</th>
+                    <td class="kolumna_2">Pciążanie operatorów</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w10-11 Przeciazanie operatorow 2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 12:</th>
+                    <td class="kolumna_2">Polimorfizm i klasy wirtualne</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w12 Polimorfizm 2021.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 13:</th>
+                    <td class="kolumna_2">
+                      Dynamiczne struktury danych; Listy jednokierunkowe
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w13 dynamiczne str. danych 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 14:</th>
+                    <td class="kolumna_2">
+                      Dynamiczne struktury danych; Listy dwukierunkowe
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="prog_obiektowe/programowanie_obiektowe_w14 dynamiczne str. danych cz. 2 2020.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1"></th>
+                    <td class="kolumna_2">Programy z wykładów:</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-Programowanie-obiektowe-Wyklad.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Uwaga!</th>
+                    <td>
+                      Prezentacje mogą być zmieniane po wykładach. Kolejność
+                      omawianych zagadnień może ulec zmianie.<br />
+                      <b>Przypominam</b> - przeglądanie prezentacji nie zastąpi
+                      udziału w wykładzie!
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </article>
+            <!-- -END -Artykuł- -->
+          </section>
+          <section class="section_art column_2">
+            <!-- ----Artykuł--- -->
+            <article class="article">
+              <!-- ---menu wyładów--- -->
+              <h2>Laboratoria</h2>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 5:</th>
-                                    <td class="kolumna_2">Klasy (cz. 3) konstruktor c.d.; Przeciążanie metod</td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w05 klasy cz 3 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                        <a href="https://youtu.be/R7Yxs3A7tXk" target="_blank"><img src="images/yt.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 6:</th>
-                                    <td class="kolumna_2">Klasy (cz. 4) Przekazywanie obiektów do funkcji
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w06 Przekazywanie obiektow do funkcji 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                        <a href="https://youtu.be/IrbFD5w2PIQ" target="_blank"><img src="images/yt.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 7:</th>
-                                    <td class="kolumna_2">Składniki statyczne klas
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w07 Pola statyczne klas 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                        <a href="https://youtu.be/5aMfPYgXqoM" target="_blank"><img src="images/yt.png"
-                                                alt="Plik do pobrania"></a>
+              <table class="menu_wyklady wiersz2">
+                <caption>
+                  <h3>Programy wykonane w trakcie laboratoriów</h3>
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">Nr.</th>
+                    <th scope="col">Grupa</th>
+                    <th scope="col">Repozytorium</th>
+                  </tr>
 
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 8:</th>
-                                    <td class="kolumna_2">Dziedziczenie
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w08 dziedziczenie 2021.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 9:</th>
-                                    <td class="kolumna_2">Funkcje zaprzyjaźnione
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w09 Funkcje zaprzyjaznione 2021.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                        <a href="https://youtu.be/KLWo53p5hFs" target="_blank"><img src="images/yt.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 10:</th>
-                                    <td class="kolumna_2">Konstruktor kopiujący; Płytkie i głębokie kopiowanie obiektów
-                                    </td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w10 Konstruktor kopiujacy 2021.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 11:</th>
-                                    <td class="kolumna_2">Pciążanie operatorów</td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w11 Przeciazanie operatorow 2021.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 12:</th>
-                                    <td class="kolumna_2">Polimorfizm i klasy wirtualne</td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w12 Polimorfizm 2021.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 13:</th>
-                                    <td class="kolumna_2">Dynamiczne struktury danych;
-                                        Listy jednokierunkowe</td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w13 dynamiczne str. danych 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Wykład 14:</th>
-                                    <td class="kolumna_2">Dynamiczne struktury danych;
-                                        Listy dwukierunkowe</td>
-                                    <td class="kolumna_3"><a
-                                            href="prog_obiektowe/programowanie_obiektowe_w14 dynamiczne str. danych cz. 2 2020.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
-                                    <td class="kolumna_2">
-                                        Kierunek: Informatyka
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://github.com/BartoszewskiA/Programowanie-obiektowe-WYKLAD-Informatyka-3-semestr-2021.git"
-                                            title="Repozytorium do pobrania" target="_blank"><img src="images/git_l.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
-                                    <td class="kolumna_2">
-                                        Kierunek: Informatyka Techniczna
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://github.com/BartoszewskiA/Programowanie-obiektowe-WYKLAD-Int.-techniczna-2021.git"
-                                            title="Repozytorium do pobrania" target="_blank"><img src="images/git_l.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Uwaga!</th>
-                                    <td>Prezentacje mogą być zmieniane po wykładach. Kolejność omawianych zagadnień może
-                                        ulec zmianie.<br>
-                                        <b>Przypominam</b> - przeglądanie prezentacji nie zastąpi udziału w wykładzie!
-                                    </td>
-                                </tr>
-                            </tfoot>
-                        </table>
-                    </article>
-                    <!-- -END -Artykuł- -->
-                </section>
-                <section class="section_art column_2">
-                    <!-- ----Artykuł--- -->
-                    <article class="article">
-                        <!-- ---menu wyładów--- -->
-                        <h2>Laboratoria</h2>
-                        <table class="menu_wyklady wiersz2">
-                            <caption>
-                                <h3>Instrukcje do laboratoriów oraz wykonane w ich trakcie programy</h3>
-                            </caption>
-                            <tbody>
-                                <tr>
-                                    <th scope="col">Nr.</th>
-                                    <th scope="col">Tytuł</th>
-                                    <th scope="col">Do pobrania</th>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Lab. 4:</th>
-                                    <td class="kolumna_2">
-                                        <p class="small">
-                                            <b>Przykład:</b> Przesłanianie elementów klas, wskaźnik this
-                                        </p>
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://youtu.be/KhEUhO8v4RY" target="_blank"><img src="images/yt.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Lab. 5:</th>
-                                    <td class="kolumna_2">
-                                        <p class="small">
-                                            <b>Przykład:</b> Generator liczb pseudolosowych wzorowany na C#<br>
-                                            Zadanie do samodzielnego wykonania
-                                        </p>
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://youtu.be/Rr3qjNS3H0g" target="_blank"><img src="images/yt.png"
-                                                alt="Plik do pobrania"></a>
-                                        <a href="prog_obiektowe/zadanie_laboratoria_2.pdf" title="activity_main.xml.pdf"
-                                            target="_blank"><img src="images/pdf.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Lab. 6:</th>
-                                    <td class="kolumna_2">
-
-                                        <p class="list_p small">
-                                            <b>Przykład:</b> Klasa która zapisuje do pliku tekstowegologi (informacje o
-                                            czasie utworzenia i usunięcia obiektów)
-                                        </p>
-                                    </td>
-                                    <td class="kolumna_3">
-                                        <a href="https://youtu.be/j1vr5sS6NoU" target="_blank"><img src="images/yt.png"
-                                                alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row" class="kolumna_1">Lab. 7:</th>
-                                    <td class="kolumna_2">
-
-                                        <p class="list_p small">
-                                            Przykład: Klasa realizująca kolejkę LIFO czyli stos. Klasa przechowuje dane
-                                            w tablicy - nie stosi=ujemy jeszcze list, które poznany na kolejnych
-                                            wykładach.
-                                        </p>
-
-                                    </td>
-                                    <td class="kolumna_3"><a href="https://youtu.be/bouFs680Cwc" target="_blank"><img
-                                                src="images/yt.png" alt="Plik do pobrania"></a>
-                                    </td>
-                                </tr>
-
-
-                            </tbody>
-                            <tfoot>
-                                <tr>
-                                    <th>Informacje:</th>
-                                    <td>Obecność na laboratoriach jest obowiązkowa.</td>
-                                </tr>
-                            </tfoot>
-                        </table>
-
-                    </article>
-                    <!-- -END -Artykuł- -->
-                    <!-- ----Artykuł--- -->
-                    <article class="article read_more">
-                        <h2>Literatura</h2>
-                        <div class="picture_wrapper">
-                            <img src="images/okladki/okl21.jpg" alt="Opus magnum C++11 - Jerzy Grębosz"
-                                title="Opus magnum C++11 - Jerzy Grębosz">
-                            <img src="images/okladki/okl25.jpg" alt="Symfonia C ++ Standard - Jerzy Grębosz"
-                                title="Symfonia C ++ Standard - Jerzy Grębosz">
-                            <img src="images/okladki/okl22.jpg" alt="Język C++. Szkoła programowania. Wydanie VI -
-                            Stephen Prata" title="Język C++. Szkoła programowania. Wydanie VI -
-                            Stephen Prata">
-                            <img src="images/okladki/okl23.jpg"
-                                alt="Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie III - Bjarne Stroustrup"
-                                title="Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie III - 
-                            Bjarne Stroustrup">
-
-                        </div>
-                        <div class="description_wrapper">
-                            <p>Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie III - Bjarne Stroustrup
-                            </p>
-                            <p>Język C++. Szkoła programowania. Wydanie VI -
-                                Stephen Prata</p>
-                            <p>Opus magnum C++11 - Jerzy Grębosz</p>
-                            <p>Symfonia C ++ Standard - Jerzy Grębosz</p>
-                        </div>
-
-                    </article>
-                    <!-- -END -Artykuł- -->
-                </section>
-            </div>
-        </main>
-        <!-- ------------------------------------------------ -->
-        <!-- ------------------ Stopka ---------------------- -->
-        <footer class="footer">
-            <p>&copy; Artur Bartoszewski</p>
-        </footer>
-        <!-- ------------------------------------------------ -->
+                 
+                  <tr>
+                    <th scope="row" class="kolumna_1">1</th>
+                    <td class="kolumna_2">Grupa L1</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-Programowanie-obiektowe-L1.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">2</th>
+                    <td class="kolumna_2">Grupa L2</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-Programowanie-obiektowe-L2.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">3</th>
+                    <td class="kolumna_2">Grupa L3</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-Programowanie-obiektowe-L3.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Informacje:</th>
+                    <td>Programy dodawane po zajęciach.</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <br/>
+              <table class="menu_wyklady wiersz2">
+                <caption>
+                  <h3>
+                    Instrukcje do laboratoriów 
+                  </h3>
+                </caption>
+                <tbody>
+                  <tr>
+                    <th scope="col">Nr.</th>
+                    <th scope="col">Tytuł</th>
+                    <th scope="col">Do pobrania</th>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Lab. 4:</th>
+                    <td class="kolumna_2">
+                      <p class="small">
+                        <b>Przykład:</b> Przesłanianie elementów klas, wskaźnik
+                        this
+                      </p>
+                    </td>
+                    <td class="kolumna_3">
+                      <a href="https://youtu.be/KhEUhO8v4RY" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Lab. 5:</th>
+                    <td class="kolumna_2">
+                      <p class="small">
+                        <b>Przykład:</b> Generator liczb pseudolosowych
+                        wzorowany na C#<br />
+                        Zadanie do samodzielnego wykonania
+                      </p>
+                    </td>
+                    <td class="kolumna_3">
+                      <a href="https://youtu.be/Rr3qjNS3H0g" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                      <a
+                        href="prog_obiektowe/zadanie_laboratoria_2.pdf"
+                        title="activity_main.xml.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Lab. 6:</th>
+                    <td class="kolumna_2">
+                      <p class="list_p small">
+                        <b>Przykład:</b> Klasa która zapisuje do pliku
+                        tekstowegologi (informacje o czasie utworzenia i
+                        usunięcia obiektów)
+                      </p>
+                    </td>
+                    <td class="kolumna_3">
+                      <a href="https://youtu.be/j1vr5sS6NoU" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Lab. 7:</th>
+                    <td class="kolumna_2">
+                      <p class="list_p small">
+                        Przykład: Klasa realizująca kolejkę LIFO czyli stos.
+                        Klasa przechowuje dane w tablicy - nie stosi=ujemy
+                        jeszcze list, które poznany na kolejnych wykładach.
+                      </p>
+                    </td>
+                    <td class="kolumna_3">
+                      <a href="https://youtu.be/bouFs680Cwc" target="_blank"
+                        ><img src="images/yt.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Informacje:</th>
+                    <td>Obecność na laboratoriach jest obowiązkowa.</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </article>
+            <!-- -END -Artykuł- -->
+            <!-- ----Artykuł--- -->
+            <article class="article read_more">
+              <h2>Literatura</h2>
+              <div class="picture_wrapper">
+                <img
+                  src="images/okladki/okl21.jpg"
+                  alt="Opus magnum C++11 - Jerzy Grębosz"
+                  title="Opus magnum C++11 - Jerzy Grębosz"
+                />
+                <img
+                  src="images/okladki/okl25.jpg"
+                  alt="Symfonia C ++ Standard - Jerzy Grębosz"
+                  title="Symfonia C ++ Standard - Jerzy Grębosz"
+                />
+                <img
+                  src="images/okladki/okl22.jpg"
+                  alt="Język C++. Szkoła programowania. Wydanie VI -
+                            Stephen Prata"
+                  title="Język C++. Szkoła programowania. Wydanie VI -
+                            Stephen Prata"
+                />
+                <img
+                  src="images/okladki/okl23.jpg"
+                  alt="Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie III - Bjarne Stroustrup"
+                  title="Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie III - 
+                            Bjarne Stroustrup"
+                />
+              </div>
+              <div class="description_wrapper">
+                <p>
+                  Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie
+                  III - Bjarne Stroustrup
+                </p>
+                <p>
+                  Język C++. Szkoła programowania. Wydanie VI - Stephen Prata
+                </p>
+                <p>Opus magnum C++11 - Jerzy Grębosz</p>
+                <p>Symfonia C ++ Standard - Jerzy Grębosz</p>
+              </div>
+            </article>
+            <!-- -END -Artykuł- -->
+          </section>
+        </div>
+      </main>
+      <!-- ------------------------------------------------ -->
+      <!-- ------------------ Stopka ---------------------- -->
+      <footer class="footer">
+        <p>&copy; Artur Bartoszewski</p>
+      </footer>
+      <!-- ------------------------------------------------ -->
     </div>
-</body>
-
+  </body>
 </html>
