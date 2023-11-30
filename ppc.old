@@ -66,14 +66,14 @@
             <li class="przedmiot">
               <a href="arch_w.html">Architektura komputerów</a>
             </li>
-            <li class="przedmiot">
-              <a href="ppc.html">Podstawy programowania (c&nbspi&nbspc++)</a>
+            <li class="przedmiot pointer">
+              <a href="#">Podstawy programowania (c&nbspi&nbspc++)</a>
             </li>
             <li class="przedmiot">
               <a href="pob.html">Programowanie obiektowe (c++)</a>
             </li>
-            <li class="przedmiot pointer">
-              <a href="#">Programowanie aplikacji mobilnych (Java)</a>
+            <li class="przedmiot">
+              <a href="am.html">Programowanie aplikacji mobilnych (Java)</a>
             </li>
             <li class="przedmiot">
               <a href="wsp.html"
@@ -85,6 +85,7 @@
                 >Aplikacje frontendowe (HTML5, CSS i Java Script)</a
               >
             </li>
+
             <li class="przedmiot">
               <a href="aplikacje_beckendowe.html"
                 >Aplikacje backendowe (PHP i SQL)</a
@@ -115,7 +116,7 @@
               <table class="menu_wyklady">
                 <!-- wiersz2 -- dopisac klase -->
                 <caption>
-                  <h3>Programowanie aplikacji mobilnych (Java i Android)</h3>
+                  <h3>Podstawy programowania (C i C++)</h3>
                 </caption>
                 <tbody>
                   <tr>
@@ -126,12 +127,12 @@
                   <tr>
                     <th scope="row" class="kolumna_1">Wykład 1:</th>
                     <td class="kolumna_2">
-                      Podstawowe pojęcia i struktura systemu Android.
-                      ConstraintLayout.
+                      Języki programowania i środowiska programistyczne; Wstęp
+                      do C++;
                     </td>
                     <td class="kolumna_3">
                       <a
-                        href="am/aplikacje_mobilne_2020_01 - laout.pdf"
+                        href="pp_cpp/podstawy_programowania_2020_w1.pdf"
                         target="_blank"
                         ><img src="images/pdf.png" alt="Plik do pobrania"
                       /></a>
@@ -140,11 +141,11 @@
                   <tr>
                     <th scope="row" class="kolumna_1">Wykład 2:</th>
                     <td class="kolumna_2">
-                      Struktura projektu. Widoki: Button, TextView i EditText.
+                      Algorytmy; Instrukcje wyboru; Pętla for
                     </td>
                     <td class="kolumna_3">
                       <a
-                        href="am/aplikacje_mobilne_2020_02 - podstawowe kontrolki.pdf"
+                        href="pp_cpp/podstawy_programowania_2020_w2.pdf"
                         target="_blank"
                         ><img src="images/pdf.png" alt="Plik do pobrania"
                       /></a>
@@ -153,12 +154,11 @@
                   <tr>
                     <th scope="row" class="kolumna_1">Wykład 3:</th>
                     <td class="kolumna_2">
-                      Zasoby projektu: Łańcuchy i tablice łańcuchów, grafika,
-                      mipmapy, wersje językowe i orientacje layoutu.
+                      Iteracja, Pętle for, while i do while
                     </td>
                     <td class="kolumna_3">
                       <a
-                        href="am/aplikacje_mobilne_2020_03 - zasoby.pdf"
+                        href="pp_cpp/podstawy_programowania_2020_w3.pdf"
                         target="_blank"
                         ><img src="images/pdf.png" alt="Plik do pobrania"
                       /></a>
@@ -166,13 +166,10 @@
                   </tr>
                   <tr>
                     <th scope="row" class="kolumna_1">Wykład 4:</th>
-                    <td class="kolumna_2">
-                      Słuchacze zdarzeń. Obsługa zdarzeń kliknięcia i długiego
-                      klikniecia.
-                    </td>
+                    <td class="kolumna_2">Tablice</td>
                     <td class="kolumna_3">
                       <a
-                        href="am/aplikacje_mobilne_2020_04 - sluchacze zdarzen.pdf"
+                        href="pp_cpp/podstawy_programowania_2020_w4.pdf"
                         target="_blank"
                         ><img src="images/pdf.png" alt="Plik do pobrania"
                       /></a>
@@ -181,153 +178,137 @@
                   <tr>
                     <th scope="row" class="kolumna_1">Wykład 5:</th>
                     <td class="kolumna_2">
-                      Pozostałe kontrolki systemu Android: RadioButtos,
-                      CheckBox, Switch SeekBar, RatinBar, Spinner.
+                      Funkcje. Przekazywanie argumentów do funkcji
                     </td>
                     <td class="kolumna_3">
                       <a
-                        href="am/aplikacje_mobilne_2020_05 - pozostale kontrolki Androida.pdf"
+                        href="pp_cpp/podstawy_programowania_2020_w5.pdf"
                         target="_blank"
                         ><img src="images/pdf.png" alt="Plik do pobrania"
                       /></a>
                     </td>
                   </tr>
-                  <tr>
-                    <th scope="row" class="kolumna_1">Wykład 6:</th>
-                    <td class="kolumna_2">Projekt praktyczny - kalkulator.</td>
-                    <td class="kolumna_3">
-                      <a
-                        href="am/aplikacje_mobilne_2020_06 - Projekt Kalkulator.pdf"
-                        target="_blank"
-                        ><img src="images/pdf.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
+                  <tr></tr>
                   <tr>
                     <th scope="row" class="kolumna_1">Wykład 7:</th>
                     <td class="kolumna_2">
-                      Intencje - otwieranie różnych typów aktywności (aktywności
-                      programu i zewnętrznych). Otwieranie stron WWW
-                      bezpośrednio w aplikacji - komponent WebView.
+                      Przykład praktyczny - Gra w okręty
                     </td>
                     <td class="kolumna_3">
-                      <a
-                        href="am/aplikacje_mobilne_2020_07 - intencje, Komponent WebView.pdf"
-                        target="_blank"
+                      <a href="pp_cpp/gra_w_okrety.pdf" target="_blank"
                         ><img src="images/pdf.png" alt="Plik do pobrania"
                       /></a>
                     </td>
                   </tr>
                   <tr>
                     <th scope="row" class="kolumna_1">Wykład 8:</th>
-                    <td class="kolumna_2">
-                      Obsługa gestów pełnoekranowych. Logi systemowe.
-                    </td>
+                    <td class="kolumna_2">Łańcuchy znaków. Klasa string</td>
                     <td class="kolumna_3">
                       <a
-                        href="am/aplikacje_mobilne_2020_08 - Gesty, Logi.pdf"
+                        href="pp_cpp/podstawy_programowania_2020_w7.pdf"
                         target="_blank"
                         ><img src="images/pdf.png" alt="Plik do pobrania"
                       /></a>
                     </td>
                   </tr>
-
                   <tr>
                     <th scope="row" class="kolumna_1">Wykład 9:</th>
-                    <td class="kolumna_2">Cykl zycia aktywnosci.</td>
-                    <td class="kolumna_3">
-                      <a
-                        href="am/aplikacje_mobilne_2022_09 (cykl zycia aktywnosci).pdf"
-                        target="_blank"
-                        ><img src="images/pdf.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row" class="kolumna_1">Wykład 10:</th>
                     <td class="kolumna_2">
-                      Menu (główne i kontekstowe). Widoki List.
-                    </td>
-                    <td class="kolumna_3">
-                      <a
-                        href="am/aplikacje_mobilne_2020_10 (Menu widoki list).pdf"
-                        target="_blank"
-                        ><img src="images/pdf.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row" class="kolumna_1">Wykład 11:</th>
-                    <td class="kolumna_2">Obsługa GPS. Google Maps.</td>
-                    <td class="kolumna_3">
-                      <a
-                        href="am/aplikacje_mobilne_2020_11 (GPS GoogleMaps).pdf"
-                        target="_blank"
-                        ><img src="images/pdf.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row" class="kolumna_1">Wykład 12:</th>
-                    <td class="kolumna_2">
-                      Fotografia - obsługa aparatu. Grafika - klasa Canvas.
-                    </td>
-                    <td class="kolumna_3">
-                      <a
-                        href="am/aplikacje_mobilne_2020_12 (Fotografia i grafika).pdf"
-                        target="_blank"
-                        ><img src="images/pdf.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <th scope="row" class="kolumna_1"></th>
-                    <td class="kolumna_2">
-                      <b
-                        >Programy tworzone w trakcie wykładów znajdują się na
-                        publicznych repozytoriach GitHub</b
-                      >
+                      Łańcuchy znaków. Klasa string c.d. - przykłady
                     </td>
                     <td class="kolumna_3"></td>
                   </tr>
-
                   <tr>
-                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
-                    <td class="kolumna_2">Kierunkek: <b>Informatka</b></td>
+                    <th scope="row" class="kolumna_1">Wykład 10:</th>
+                    <td class="kolumna_2">Pliki tekstowe</td>
                     <td class="kolumna_3">
                       <a
-                        href="https://github.com/BartoszewskiA/2023-24_Programowanie_aplikacji_mobilnych_w.git"
+                        href="pp_cpp/podstawy_programowania_2020_w10.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 11:</th>
+                    <td class="kolumna_2">Struktury, unie, pola bitowe</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="pp_cpp/podstawy_programowania_2020_w11.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 12:</th>
+                    <td class="kolumna_2">Wskaźniki i zmienne dynamiczne</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="pp_cpp/podstawy_programowania_2020_w12.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Wykład 13:</th>
+                    <td class="kolumna_2">Rekurencja</td>
+                    <td class="kolumna_3">
+                      <a
+                        href="pp_cpp/podstawy_programowania_2020_w13.pdf"
+                        target="_blank"
+                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
+                    <td class="kolumna_2">Kierunek: <b>Informatyka</b></td>
+
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-23-Podstawy-programowania-W.git"
                         title="Repozytorium do pobrania"
                         target="_blank"
                         ><img src="images/git_l.png" alt="Plik do pobrania"
                       /></a>
                     </td>
                   </tr>
-
-                  <!-- <tr>
+                  <tr>
                     <th scope="row" class="kolumna_1">Programy z wykładów:</th>
                     <td class="kolumna_2">
-                      Kierunek: <b>Informatyka techniczna</b>
+                      Kierunek: <b>Informatyka Techniczna</b>
                     </td>
                     <td class="kolumna_3">
                       <a
-                        href="https://github.com/BartoszewskiA/2022-23-Programowanie-aplikacji-mobilnych-IT-W.git"
+                        href="https://github.com/BartoszewskiA/2022-23-Podstawy-programowania-IT-W.git"
                         title="Repozytorium do pobrania"
                         target="_blank"
                         ><img src="images/git_l.png" alt="Plik do pobrania"
                       /></a>
                     </td>
-                  </tr> -->
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">Programy z wykładów:</th>
+                    <td class="kolumna_2">
+                      Kierunek: <b>Informatyka - studia niestacjonarne</b>
+                    </td>
+
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-23-Podstawy-programowania-NST-W.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
                 </tbody>
                 <tfoot>
                   <tr>
                     <th>Uwaga!</th>
                     <td>
-                      Prezentacje mogą być zmieniane po wykładach. .<br />
                       <b>Przypominam</b> - przeglądanie prezentacji nie zastąpi
                       udziału w wykładzie!
                     </td>
@@ -337,13 +318,12 @@
             </article>
             <!-- -END -Artykuł- -->
           </section>
-          <!-- -----------------------------------------------podział sekcji-------------------------------------------- -->
+          <!-- ----------------------------------------------- podział kolumn --------------------------------------------------------- -->
           <section class="section_art column_2">
             <!-- ----Artykuł--- -->
             <article class="article">
               <!-- ---menu wyładów--- -->
-              <h2>Laboratoria</h2>
-
+              <h2>Laboratoria - Studia Niestacjonarne</h2>
               <table class="menu_wyklady">
                 <caption>
                   <!-- <h3>Instrukcje do laboratoriów oraz wykonane w ich trakcie programy</h3> -->
@@ -354,126 +334,46 @@
                     <th scope="col"></th>
                     <th scope="col">Do pobrania</th>
                   </tr>
-                  <tr>
-                    <th scope="row" class="kolumna_1">Laboratoria:</th>
-                    <td class="kolumna_2">
-                      Kierunkek: Informatka <b>Grupa L1</b>
-                    </td>
-                    <td class="kolumna_3">
-                      <a
-                        href="https://github.com/BartoszewskiA/2023-24_Programowanie_aplikacji_mobilnych_l1.git"
-                        title="Repozytorium do pobrania"
-                        target="_blank"
-                        ><img src="images/git_l.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="kolumna_1">Laboratoria:</th>
-                    <td class="kolumna_2">
-                      Kierunkek: Informatka <b>Grupa L2</b>
-                    </td>
-                    <td class="kolumna_3">
-                      <a
-                        href="https://github.com/BartoszewskiA/2023-24_Programowanie_aplikacji_mobilnych_l2.git"
-                        title="Repozytorium do pobrania"
-                        target="_blank"
-                        ><img src="images/git_l.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="kolumna_1">Laboratoria:</th>
-                    <td class="kolumna_2">
-                      Kierunkek: Informatka <b>Grupa L3</b>
-                    </td>
-                    <td class="kolumna_3">
-                      <a
-                        href="https://github.com/BartoszewskiA/2023-24_Programowanie_aplikacji_mobilnych_l3.git"
-                        title="Repozytorium do pobrania"
-                        target="_blank"
-                        ><img src="images/git_l.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
-                  <!-- <tr>
-                    <th scope="row" class="kolumna_1">Laboratoria:</th>
-                    <td class="kolumna_2">
-                      Kierunek: <b>Informatyka techniczna</b>
-                    </td>
-                    <td class="kolumna_3">
-                      <a
-                        href="https://github.com/BartoszewskiA/2022-23-Programowanie-aplikacji-mobilnych-IT-Lab.git"
-                        title="Repozytorium do pobrania"
-                        target="_blank"
-                        ><img src="images/git_l.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr> -->
-                </tbody>
-              </table>
-
-              <!-- ---------------------------------------------------------- -->
-
-              <table class="menu_wyklady">
-                <caption>
-                  <h3><br />Instrukcje do laboratoriów</h3>
-                </caption>
-                <tbody>
-                  <tr>
-                    <th scope="col">Nr.</th>
-                    <th scope="col">Tytuł</th>
-                    <th scope="col">Do pobrania</th>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="kolumna_1">Lab. 3:</th>
-                    <td class="kolumna_2">
-                      <h4>Kalkulator</h4>
-                      <p class="small">
-                        Podbnie jak w większości dostępnych na Androida
-                        kalkulatorów jego wygląd dopasowuje się do
-                        rozdzielczości oraz orientacji ekranu. W tym cwiczeniu
-                        wykonujemy tylko Layout - oprogramujemy go ćwiczeniu
-                        następnym.
-                      </p>
-                    </td>
-                    <td class="kolumna_3">
-                      <a
-                        href="am/aplikacje_mobilne_2020_ Przyklad Kalkulator.pdf"
-                        title="projekt_kalkulator.pdf"
-                        target="_blank"
-                        ><img src="images/pdf.png" alt="Plik do pobrania"
-                      /></a>
-                    </td>
-                  </tr>
 
                   <tr>
-                    <th scope="row" class="kolumna_1">Lab. 5:</th>
+                    <th scope="row" class="kolumna_1">L1:</th>
                     <td class="kolumna_2">
-                      <h4>Tester RGB</h4>
-                      <p class="list_p small">
-                        Tester kolorów RGB. Program wykorzystuje słuchacza
-                        zdarzeń.
-                      </p>
+                      Programy tworzone w trakcie Laboratoriów
                     </td>
                     <td class="kolumna_3">
-                      <a href="am/projekt_rgb.pdf" target="_blank"
-                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-23-Podstawy-programowania-NST-L1.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
                       /></a>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row" class="kolumna_1">Lab. 6:</th>
+                    <th scope="row" class="kolumna_1">L2:</th>
                     <td class="kolumna_2">
-                      <h4>Przelicznik walut</h4>
-                      <p class="list_p small">
-                        Przelicznik walut - obsługiwany bez pomocy klawiatury
-                        ekranowej.
-                      </p>
+                      Programy tworzone w trakcie Laboratoriów
                     </td>
                     <td class="kolumna_3">
-                      <a href="am/projekt_przelicznik_walut.pdf" target="_blank"
-                        ><img src="images/pdf.png" alt="Plik do pobrania"
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-23-Podstawy-programowania-NST-L2.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
+                      /></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="kolumna_1">L3:</th>
+                    <td class="kolumna_2">
+                      Programy tworzone w trakcie Laboratoriów
+                    </td>
+                    <td class="kolumna_3">
+                      <a
+                        href="https://github.com/BartoszewskiA/2022-23-Podstawy-programowania-NST-L3.git"
+                        title="Repozytorium do pobrania"
+                        target="_blank"
+                        ><img src="images/git_l.png" alt="Plik do pobrania"
                       /></a>
                     </td>
                   </tr>
@@ -481,7 +381,10 @@
                 <tfoot>
                   <tr>
                     <th>Informacje:</th>
-                    <td>Obecność na laboratoriach jest obowiązkowa.</td>
+                    <td>
+                      Obecność na laboratoriach jest obowiązkowa.
+                      <br />Materiały bedą pojawiać się w trakcie semestru.
+                    </td>
                   </tr>
                 </tfoot>
               </table>
@@ -493,44 +396,51 @@
               <h2>Literatura</h2>
               <div class="picture_wrapper">
                 <img
-                  src="images/okladki/okl11.jpg"
-                  alt="Android w praktyce
-                            Ch. Collins, M. Galpin, M. Kaeppler"
-                  title="Android w praktyce
-                            Ch. Collins, M. Galpin, M. Kaeppler"
+                  src="images/okladki/okl21.jpg"
+                  alt="Opus magnum C++11 - Jerzy Grębosz"
+                  title="Opus magnum C++11 - Jerzy Grębosz"
                 />
                 <img
-                  src="images/okladki/okl12.jpg"
-                  alt="Android w akcji. Wydanie II
-                            F. Ableson, R. Senr"
-                  title="Android w akcji. Wydanie II
-                            F. Ableson, R. Senr"
+                  src="images/okladki/okl25.jpg"
+                  alt="Symfonia C ++ Standard - Jerzy Grębosz"
+                  title="Symfonia C ++ Standard - Jerzy Grębosz"
                 />
                 <img
-                  src="images/okladki/okl13.jpg"
-                  alt="Android. Programowanie aplikacji. Rusz głową!    
-                            D. Griffiths, D. Griffiths"
-                  title="Android. Programowanie aplikacji. Rusz głową!    
-                            D. Griffiths, D. Griffiths"
+                  src="images/okladki/okl22.jpg"
+                  alt="Język C++. Szkoła programowania. Wydanie VI -
+                            Stephen Prata"
+                  title="Język C++. Szkoła programowania. Wydanie VI -
+                            Stephen Prata"
                 />
                 <img
-                  src="images/okladki/okl15.jpg"
-                  alt="Android Studio. Podstawy tworzenia aplikacji
-                            A. Stasiewicz"
-                  title="Android. Podstawy tworzenia aplikacji
-                            A. Stasiewicz"
+                  src="images/okladki/okl23.jpg"
+                  alt="Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie III - 
+                            Bjarne Stroustrup"
+                  title="Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie III - 
+                            Bjarne Stroustrup"
+                />
+                <img
+                  src="images/okladki/okl24.jpg"
+                  alt="Język ANSI C. Programowanie -
+                            Ritchie M. Dennis Brian W Kernighan"
+                  title="Język ANSI C. Programowanie -
+                            Ritchie M. Dennis Brian W Kernighan"
                 />
               </div>
               <div class="description_wrapper">
-                <p>Android w praktyce - Ch. Collins, M. Galpin, M. Kaeppler</p>
-                <p>Android w akcji. Wydanie II - F. Ableson, R. Senr</p>
                 <p>
-                  Android. Programowanie aplikacji. Rusz głową! - D. Griffiths,
-                  D. Griffiths
+                  Programowanie. Teoria i praktyka z wykorzystaniem C++. Wydanie
+                  III - Bjarne Stroustrup
                 </p>
                 <p>
-                  Android Studio. Podstawy tworzenia aplikacji - A. Stasiewicz
+                  Język C++. Szkoła programowania. Wydanie VI - Stephen Prata
                 </p>
+                <p>
+                  Język ANSI C. Programowanie - Ritchie M. Dennis Brian W
+                  Kernighan
+                </p>
+                <p>Opus magnum C++11 - Jerzy Grębosz</p>
+                <p>Symfonia C ++ Standard - Jerzy Grębosz</p>
               </div>
             </article>
             <!-- -END -Artykuł- -->
