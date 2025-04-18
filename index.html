@@ -1,188 +1,231 @@
 <!DOCTYPE html>
 <html lang="pl">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Artur Bartoszewski">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Artur Bartoszewski" />
     <meta name="copyright" content="Artur Bartoszewski" />
-    <link rel="shortcut icon" href="images/abLogo.ico">
+    <link rel="shortcut icon" href="images/abLogo.ico" />
     <title>Artru Bartoszewski - Materiały dla studentów</title>
-    <link rel="stylesheet" href="styles/styl.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styl.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/image_transition.js"></script>
     <script type="text/javascript" src="scripts/hiden_show.js"></script>
     <!-- <script type="text/javascript" src="scripts/pointer.js"></script> -->
+  </head>
 
-
-
-</head>
-
-<body>
+  <body>
     <div class="wrapper">
-        <!-- ----------------- Nagłówek --------------------- -->
-        <nav class="nav_dzialy">
-            <ul class="menu_dzialy">
-
-                <li id="wyklady" class="pointer_d"><a href="#">Wykłady</a></li>
-                <li id="praktyki"><a href="praktyki.html">Praktyki</a></li>
-                <li id="aktualnosci"><a href="#">Aktualności</a></li>
-                <li id="o_mnie"><a href="o_mnie.html">O&nbspmnie</a></li>
-
-            </ul>
-
-
-        </nav>
-        <header class="header" id="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/ablogov2.png" alt="Artur Bartoszewski">
-                </a>
-                <p>Artur Bartoszewski</p>
-
-            </div>
-            <div class="title">
-                <!-- <div class="graph" id="graph"> 
+      <!-- ----------------- Nagłówek --------------------- -->
+      <nav class="nav_dzialy">
+        <ul class="menu_dzialy">
+          <li id="wyklady" class="pointer_d"><a href="#">Wykłady</a></li>
+          <li id="praktyki"><a href="praktyki.html">Praktyki</a></li>
+          <li id="aktualnosci"><a href="#">Aktualności</a></li>
+          <li id="o_mnie"><a href="o_mnie.html">O&nbspmnie</a></li>
+        </ul>
+      </nav>
+      <header class="header" id="header">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/ablogov2.png" alt="Artur Bartoszewski" />
+          </a>
+          <p>Artur Bartoszewski</p>
+        </div>
+        <div class="title">
+          <!-- <div class="graph" id="graph"> 
                     
                 </div> -->
-                <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
-                <a href="http://www.ki.uniwersytetradom.pl/" target="_blank">
-                    <p><b>Katedra Informatyki</b><br>
-                        <span class="znikajace"> Wydział: Transportu, Elektrotechniki i Informatyki,<br></span>
-                        Uniwersytet&nbspRadomski im. Kazimierza Pułaskiego</p>
-                </a>
+          <h1 class="title">MATERIAŁY DLA&nbspSTUDENTÓW</h1>
+          <a href="http://www.ki.uniwersytetradom.pl/" target="_blank">
+            <p>
+              <b>Katedra Informatyki</b><br />
+              <span class="znikajace">
+                Wydział: Transportu, Elektrotechniki i Informatyki,<br
+              /></span>
+              Uniwersytet&nbspRadomski im. Kazimierza Pułaskiego
+            </p>
+          </a>
+        </div>
+      </header>
+      <!-- ------------------------------------------------ -->
+      <!-- ----------------- TRESC ---------------------- -->
+      <main class="main">
+        <!-- ----Nav Content--- -->
+        <nav class="nav_przedmioty">
+          <ul class="menu_przedmioty">
+            <li class="przedmiot pointer"><a href="#">Start</a></li>
+            <li class="przedmiot">
+              <a href="arch_w.html" target="_parent">Architektura komputerów</a>
+            </li>
+            <li class="przedmiot">
+              <a href="ppc.html" target="_parent"
+                >Podstawy programowania (c&nbspi&nbspc++)</a
+              >
+            </li>
+            <li class="przedmiot">
+              <a href="pob.html">Programowanie obiektowe (c++)</a>
+            </li>
+            <li class="przedmiot">
+              <a href="am.html" target="_parent"
+                >Programowanie aplikacji mobilnych (Java)</a
+              >
+            </li>
+            <li class="przedmiot">
+              <a href="wsp.html"
+                >Wizualne systemy programowania (c#&nbspi&nbsp.NET)</a
+              >
+            </li>
+            <li class="przedmiot">
+              <a href="aplikacje_frontendowe.html"
+                >Aplikacje frontendowe (HTML5, CSS i Java Script)</a
+              >
+            </li>
+            <li class="przedmiot">
+              <a href="aplikacje_beckendowe.html"
+                >Aplikacje backendowe (PHP i SQL)</a
+              >
+            </li>
+            <li class="przedmiot pointer">
+              <a href="webDesign.html">Web Design</a>
+            </li>
+            <li class="przedmiot"><a href="#">Archiwum przedmiotów</a></li>
+          </ul>
+          <div id="button_hide">&nbsp&nbsp</div>
+          <!-- <hr class="line"> -->
+          <aside>
+            <a href="https://github.com/BartoszewskiA"
+              ><img src="images/Git-logo.png" target="_blank" />
+            </a>
+            <a href="https://www.youtube.com/watch?v=h-idPK-NpYU"
+              ><img src="images/YouTube2.png" target="_blank" />
+            </a>
+          </aside>
+        </nav>
 
-            </div>
-
-        </header>
         <!-- ------------------------------------------------ -->
-        <!-- ----------------- TRESC ---------------------- -->
-        <main class="main">
-            <!-- ----Nav Content--- -->
-            <nav class="nav_przedmioty">
-                <ul class="menu_przedmioty">
-                    <li class="przedmiot pointer"><a href="#">Start</a></li>
-                    <li class="przedmiot"><a href="arch_w.html" target="_parent">Architektura komputerów</a></li>
-                    <li class="przedmiot"><a href="ppc.html" target="_parent">Podstawy programowania
-                            (c&nbspi&nbspc++)</a></li>
-                    <li class="przedmiot"><a href="pob.html">Programowanie obiektowe (c++)</a></li>
-                    <li class="przedmiot"><a href="am.html" target="_parent">Programowanie aplikacji mobilnych
-                            (Java)</a></li>
-                    <li class="przedmiot"><a href="wsp.html">Wizualne systemy programowania (c#&nbspi&nbsp.NET)</a></li>
-                    <li class="przedmiot"><a href="aplikacje_frontendowe.html">Aplikacje frontendowe (HTML5, CSS i Java Script)</a></li>
-                    <li class="przedmiot"><a href="aplikacje_beckendowe.html">Aplikacje backendowe (PHP i SQL)</a></li>
-                    <li class="przedmiot"><a href="#">Archiwum przedmiotów</a></li>
+        <!-- -END Nav Content-- -->
+        <div class="content">
+          <section class="section_art column_1">
+            <!-- ----Artykuł--- -->
+            <article class="article">
+              <h2>Wizytówka</h2>
+              <h3>dr Artur Bartoszewski</h3>
+
+              <h4>Stanowisko:</h4>
+              <section class="wciecie line_left">Adiunkt</section>
+
+              <h4>Afiliacja:</h4>
+              <section class="wciecie line_left">
+                <p><b>Katedra Informatyki</b></p>
+                <p>Wydział Transportu, Elektrotechniki i Informatyki</p>
+
+                <p>
+                  <b
+                    >Uniwersytet Technologiczno-Humanistyczny im. Kazimierza
+                    Pułaskiego w Radomiu</b
+                  >
+                </p>
+                <p>
+                  ul. Malczewskiego 20a<br />
+                  26-600 Radom
+                </p>
+              </section>
+
+              <h4>Kontakt</h4>
+              <section class="wciecie line_left">
+                E-mail:
+                <a
+                  href="mailto:artur.bartoszewski@uthrad.pl"
+                  class="kontakt"
+                  title="Adres e-mail"
+                  target="_blank"
+                  >artur.bartoszewski@uthrad.pl</a
+                ><br />
+              </section>
+            </article>
+            <!-- -END -Artykuł- -->
+          </section>
+          <section class="section_art column_2">
+            <!-- -END -Artykuł- -->
+            <!-- ----Artykuł--- -->
+            <article class="article read_more">
+              <h2>Przedmioty, które prowadzę:</h2>
+
+              <h4>Aktualnie:</h4>
+              <section class="wciecie line_left">
+                <ul class="list_p">
+                  <li>Architektura komputerów</li>
+                  <li>
+                    Programowanie aplikacji mobinych (Java dla systemu Android)
+                  </li>
+                  <li>Podstawy Programowania (c i c++)</li>
+                  <li>Wizualne systemy programowania (C# i .NET)</li>
                 </ul>
-                <div id="button_hide">&nbsp&nbsp</div>
-                <!-- <hr class="line"> -->
-                <aside>
-                    <a href="https://github.com/BartoszewskiA"><img src="images/Git-logo.png" target="_blank"> </a>
-                    <a href="https://www.youtube.com/watch?v=h-idPK-NpYU"><img src="images/YouTube2.png"
-                            target="_blank"> </a>
-                </aside>
-            </nav>
+              </section>
+              <h4>Archiwum:</h4>
+              <section class="wciecie line_left">
+                <ul class="list_p">
+                  <li>Komunikacja człowiek-komputer</li>
+                  <li>Podstawy informatyki</li>
+                  <li>Wprowadzenie do baz danych</li>
+                  <li>Techniki multimedialne</li>
+                  <li>Języki programowania c i c++</li>
+                  <li>Podstawy programowania - Pascal</li>
+                </ul>
+              </section>
+            </article>
+            <!-- -END -Artykuł- -->
+            <!-- ----Artykuł--- -->
+            <article class="article read_more">
+              <h2>Co znajdziesz na mojej stronie?</h2>
 
-            <!-- ------------------------------------------------ -->
-            <!-- -END Nav Content-- -->
-            <div class="content">
-                <section class="section_art column_1">
-                    <!-- ----Artykuł--- -->
-                    <article class="article">
-                        <h2>Wizytówka</h2>
-                        <h3>dr Artur Bartoszewski</h4>
-
-                            <h4>Stanowisko:</h4>
-                            <section class="wciecie line_left">Adiunkt</section>
-
-                            <h4>Afiliacja:</h4>
-                            <section class="wciecie line_left">
-                                <p></p><b>Katedra Informatyki</b> </p>
-                                <p>Wydział Transportu, Elektrotechniki i Informatyki</p>
-
-
-                                <p><b>Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w Radomiu</b>
-                                </p>
-                                <p>ul. Malczewskiego 20a<br>
-                                    26-600 Radom</p>
-                            </section>
-
-                            <h4>Kontakt</h4>
-                            <section class="wciecie line_left">
-                                E-mail: <a href="mailto:artur.bartoszewski@uthrad.pl" class="kontakt"
-                                    title="Adres e-mail" target="_blank">artur.bartoszewski@uthrad.pl</a><br />
-                            </section>
-                    </article>
-                    <!-- -END -Artykuł- -->
-
-                </section>
-                <section class="section_art column_2">
-                    <!-- -END -Artykuł- -->
-                    <!-- ----Artykuł--- -->
-                    <article class="article read_more">
-                        <h2>Przedmioty, które prowadzę:</h2>
-
-                        <h4>Aktualnie:</h4>
-                        <section class="wciecie line_left">
-                            <ul class="list_p">
-                                <li>Architektura komputerów</li>
-                                <li>Programowanie aplikacji mobinych (Java dla systemu Android)</li>
-                                <li>Podstawy Programowania (c i c++)</li>
-                                <li>Wizualne systemy programowania (C# i .NET)</li>
-                            </ul>
-
-                        </section>
-                        <h4>Archiwum:</h4>
-                        <section class="wciecie line_left">
-                            <ul class="list_p">
-                                <li>Komunikacja człowiek-komputer</li>
-                                <li>Podstawy informatyki</li>
-                                <li>Wprowadzenie do baz danych</li>
-                                <li>Techniki multimedialne</li>
-                                <li>Języki programowania c i c++</li>
-                                <li>Podstawy programowania - Pascal</li>
-                            </ul>
-
-                        </section>
-
-                    </article>
-                    <!-- -END -Artykuł- -->
-                    <!-- ----Artykuł--- -->
-                    <article class="article read_more">
-                        <h2>Co znajdziesz na mojej stronie?</h2>
-
-                        <p>Zamieszczam tu materiały przeznaczone dla studentów:</p>
-                        <section class="wciecie line_left">
-                            <ul class="list_p">
-                                <li>prezentacje wykorzystane w trakcie wykładów,</li>
-                                <li>instrukcje i materiały do ćwiczeń,</li>
-                                <li><a href="praktyki.html" title="informacje na temat praktyk studenckich">informacje
-                                        na temat praktyk studenckich</a></li>
-                            </ul>
-                        </section>
-                        <p>Z czasem pojawi się też trochę linków do stron poświęconych
-                            poruszanej tu
-                            tematyce (a także do stron moim zdaniem przydatnych i ciekawych).</p>
-                        <p class="small">P.S. Nie chciałbym, aby ktoś pomyślał, że prezentacje tu zamieszczone mogą
-                            zastąpić
-                            wykład, a instrukcje udział w&nbsp;laboratoriach. Nie są one podręcznikiem! Mogą jednak
-                            pomóc
-                            w&nbsp;powtórzeniu wiadomości lub też uzupełnieniu ewentualnych luk.</p>
-
-                    </article>
-                </section>
-            </div>
-        </main>
-        <!-- ------------------------------------------------ -->
-        <!-- ------------------ Stopka ---------------------- -->
-        <footer class="footer">
-            <p>&copy; Artur Bartoszewski</p>
-        </footer>
-        <!-- ------------------------------------------------ -->
+              <p>Zamieszczam tu materiały przeznaczone dla studentów:</p>
+              <section class="wciecie line_left">
+                <ul class="list_p">
+                  <li>prezentacje wykorzystane w trakcie wykładów,</li>
+                  <li>instrukcje i materiały do ćwiczeń,</li>
+                  <li>
+                    <a
+                      href="praktyki.html"
+                      title="informacje na temat praktyk studenckich"
+                      >informacje na temat praktyk studenckich</a
+                    >
+                  </li>
+                </ul>
+              </section>
+              <p>
+                Z czasem pojawi się też trochę linków do stron poświęconych
+                poruszanej tu tematyce (a także do stron moim zdaniem
+                przydatnych i ciekawych).
+              </p>
+              <p class="small">
+                P.S. Nie chciałbym, aby ktoś pomyślał, że prezentacje tu
+                zamieszczone mogą zastąpić wykład, a instrukcje udział
+                w&nbsp;laboratoriach. Nie są one podręcznikiem! Mogą jednak
+                pomóc w&nbsp;powtórzeniu wiadomości lub też uzupełnieniu
+                ewentualnych luk.
+              </p>
+            </article>
+          </section>
+        </div>
+      </main>
+      <!-- ------------------------------------------------ -->
+      <!-- ------------------ Stopka ---------------------- -->
+      <footer class="footer">
+        <p>&copy; Artur Bartoszewski</p>
+      </footer>
+      <!-- ------------------------------------------------ -->
     </div>
-</body>
-
+  </body>
 </html>
